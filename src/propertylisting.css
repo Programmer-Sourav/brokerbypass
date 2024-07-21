@@ -1,0 +1,49 @@
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica','Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.top-default{
+    display: flex;
+    width:  752px;
+    height: 108px;
+    justify-content: space-between;
+}
+.top-default-col{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: rgba(220, 220, 220, 0.345);
+}
+.top-details{
+    display: flex;
+    height: 40px;
+    margin-left: 16px;
+    margin-top: 16px;
+    width: auto;
+    padding: 16px;
+    margin-right: 16px;
+    text-align: center;
+    margin-right: -36px;
+}
+.default-text{
+    text-align: left;
+    margin-right: 16px;
+    padding-left: 32px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: -16px;
+}
+.select-default{
+    outline: none;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    margin-left: 16px;
+}
+
+.text-default-center{
+    text-align: center;
+    margin-top: 8px;
+}

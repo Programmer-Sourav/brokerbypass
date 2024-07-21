@@ -1,0 +1,88 @@
+/* .firsthome{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica','Arial', sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b1b1;
+    width: 100%;
+    /* display: flex;
+    flex-direction: row;  
+    width: 1300px;
+    background: rgba(230, 230, 226, 0.686);
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b1b1; */
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    
+    /* margin-right: 4%;
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly; */
+}
+
+.btn-default-2{
+    background-color: rgb(58, 185, 157);
+    height: 36px;
+    font-weight: 400;
+    margin: 16px;
+    color: white;
+    border-radius: 0px;
+    text-align: center;
+    width: 192px;
+}
+.nav-container-right{
+   display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+.signup{
+    color: gray;
+    padding: 8px;
+    margin: 8px;
+    font-weight: 400;
+    min-width: 80px;
+   
+}
+.login{
+    color: gray;
+    padding: 8px;
+    margin: 8px; 
+    font-weight: 400;
+    min-width: 80px;
+    
+}
+.menu{
+    color: gray;
+    padding: 8px;
+    margin: 8px; 
+    font-weight: 400;
+   
+}
+.companylogo{
+    margin-left: 1%;
+    width: 350px;
+    align-items: center;
+}
+.select-default-transparent{
+    outline: none;
+    margin-left: 16px;
+    border: 0px;
+}

@@ -1,0 +1,132 @@
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica','Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.card-parent{
+    display: flex;
+    flex-direction: column;
+    width: 752px;
+    height: 420px;
+    background-color: rgba(220, 220, 220, 0.312);
+}
+.room-details-price{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    height: 72px;
+    justify-content: space-between;
+    border: 1px solid rgb(211, 207, 207);
+}
+.room-details-inner-component{
+  width: 100%;
+  padding-left: 64px;
+  padding-right: 64px;
+  border-right: 1px solid rgb(211, 207, 207);
+  text-align: center;
+}
+.room-details-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.room-details-overall{
+    display: flex;
+    flex-direction: row;
+    height: 192px;
+    margin: 16px;
+}
+.img-cotainer{
+    height: 220px;
+    width: 272px;
+    background-color: yellow;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  width: 100%;
+  height: 140px;
+  margin-left: 16px;
+  border: 1px solid gainsboro;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  color: black;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  margin: 2px;
+}
+
+.footer-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icon-box{
+  border: 1px solid gainsboro;
+  height: 40px;
+  width: 40px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.button-default{
+  background-color: rgb(233, 39, 71);
+  height: 40px;
+  width: 240px;
+  color: white;
+  margin: 16px;
+  border-radius: 0px;
+}
+.property-title-default{
+  padding: 8px;
+  font-weight: 400;
+  font-style: bold;
+  color: #000000;
+}
+.property-grid-title{
+  padding: 8px;
+  font-size: 12px;
+  color: #000000;
+  margin-top: -8px;
+  font: 900;
+}
+.propery-description-default{
+  padding: 8px;
+  font-size: 12px;
+  margin-top: -24px;
+  color: rgb(149, 138, 138);
+}
+/* .item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: main; }
+.item6 { grid-area: right; }
+.item7 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} */
