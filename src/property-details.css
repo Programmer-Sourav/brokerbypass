@@ -74,14 +74,22 @@
 
 .grid-item-2 {
   display: flex;
-  justify-content: center;
-  align-items: left;
+  justify-content:space-around;
+  align-items: center;
   color: black;
   height: 60px;
-  flex-direction: column;
+  flex-direction: row;
   margin: 2px;
   border: 1px solid gainsboro;
   margin: 8px;
+}
+
+.grid-item-inneritem{
+    text-align: left;
+    padding-top: 8px;
+    margin-left: -60px;
+    width: 128px;
+    height: 40px;
 }
 .details-container{
     display: flex;
@@ -117,4 +125,157 @@
 .span-img-default{
     height: 24px;
     width: 24px;
+}
+.span-img-default-2{
+    height: 24px;
+    width: 24px;
+    padding-left: 16px;
+}
+.overview-default{
+    display: flex;
+    justify-content: space-between;
+}
+.grid-container-3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    width: 55%;
+    height: 320px;
+    margin-left: 16px;
+  }
+.grid-item-3 {
+    display: flex;
+    justify-content:space-around;
+    align-items: left;
+    color: black;
+    height: 60px;
+    flex-direction: row;
+    margin: 2px;
+    border-bottom: 1px dotted gainsboro;
+    margin: 8px;
+  }
+  
+  .grid-item-inneritem-3{
+      text-align: left;
+      padding-top: 8px;
+      margin-left: -60px;
+      width: auto;
+      height: 40px;
+  }
+  .span-default-0{
+    font-weight: 500;
+    font: bold;
+  }
+
+  .parent-default0{
+    border: 1px solid gainsboro;
+    width: 40%;
+    height: 192px;
+  }
+
+  .header-default-0{
+    padding-left: 16px;
+  }
+  .hr-default-0{
+    background: gainsboro;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .background-default-0{
+    background-color: rgba(202, 226, 202, 0.384);
+    margin-left: 16px;
+    width: 128px;
+    height: 92px;
+    padding-left: 8px;
+  }
+  .background-default-1{
+    background-color: red;
+  }
+  .default-text-0{
+    margin-top: -16px;
+    text-align: center;
+  }
+  .default-text-1{
+    text-align: left;
+    padding-left: 8px;
+    margin-top: 4px;
+  }
+  .flexview-default{
+    display: flex;
+    justify-content: space-around;
+}
+ .parent-default1{
+    border: 1px solid gainsboro;
+    width: 100%;
+    height: 240px;
+    background-color: #ffffff;
+    box-shadow: rgba(128, 128, 128, 0.379);
+    margin-top: 16px;
+ }
+ .parent-default2{
+    border: 1px solid gainsboro;
+    width: 100%;
+    height: 240px;
+    background-color: #ffffff;
+    box-shadow: rgba(128, 128, 128, 0.379);
+ }
+ .header-default-1{
+    padding-left: 16px;
+    text-decoration: underline;
+    text-decoration-color: rgb(231, 41, 72);
+    text-underline-offset: 16px;
+  }
+  .btn-default-1{
+    color: rgb(231, 41, 72);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-radius: 0px;
+    outline: transparent;
+    background-color: transparent;
+  }
+  .btn-default-1:hover{
+    outline: none;
+  }
+  .overview-default-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+  }
+  .overview-default-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+  }
+  .quickview-parent-default{
+    margin-left: 16px;
+  }
+  .input-default-1{
+    height: 40px;
+    min-width: 384px;
+    border-radius: 0px;
+    border: 1px solid gainsboro;
+    padding-left: 8px;
+  }
+  .input-default-1:focus {
+    outline: none;
+}
+
+.btn-default-1{
+    height: 40px;
+    min-width: 252px;
+    border-radius: 0px;
+    border: 1px solid rgb(220, 55, 55);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-default-1:focus {
+    outline: none;
 }

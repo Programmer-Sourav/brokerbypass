@@ -13,6 +13,7 @@ import PropertyListMap from './PropertyListMap'
 import SearchBar from './SearchBar'
 import PropertyOverlayCard from './PropertyOverlayCard'
 import PropertyDetails from './PropertyDetails'
+import QuickViewPropertyItem from './CardComponents/QuickViewPropertyItem'
 
 function App() {
   const [count, setCount] = useState(0)
