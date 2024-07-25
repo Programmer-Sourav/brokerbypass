@@ -5,7 +5,7 @@ import RentDiv from "./RentDiv"
 import BuyDiv from "./BuyDiv"
 import CommercialDiv from "./CommercialDiv"
 import HomePic from "./assets/home.png"
-import ListPic from "./assets/list.png"
+import ListPic from "./assets/list_fp.png"
 import BlockPic from "./assets/userblock.png"
 
 export default function FirstHome(){
