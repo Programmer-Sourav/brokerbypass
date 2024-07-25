@@ -24,7 +24,7 @@ function App() {
   return (
     <div className='App'>
    
-    {/* <FirstHome/> */}
+    <FirstHome/>
      {/* <PropertyListItem/> */}
     {/*<SubHeader/> */}
     {/* <NavigationLeft/> */}
@@ -35,8 +35,8 @@ function App() {
     <PropertyOverlayCard/> */}
     {/* <PropertyDetails/> */}
     {/* <ScheduleVisitInitial/> */}
-    <ScheduleVisitSecond/>
-    <MorningDiv/>
+    {/* <ScheduleVisitSecond/>
+    <MorningDiv/> */}
     </div>
     
     
