@@ -1,0 +1,212 @@
+.schedule-body{
+    display: flex;
+    min-width: 1024px;
+    text-align: left;
+}
+
+.left-pane{
+ min-width: 40%;
+ background-color: rgba(220, 220, 220, 0.644);
+ height: 512px;
+}
+.right-pane{
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+    height: 512px;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.right-rectangle-box{
+    width: 392px;
+    height: 180px;
+    border: 1px solid gainsboro;
+    border-radius: 0px;
+    position: relative; /* Optional: if needed to control the button's absolute positioning */
+    padding: 16px; /* Optional: if you want padding inside the box */
+}
+.right-rectangle-box button{
+    width: calc(100% - 32px); /* Adjust width to account for margins */
+    color: white;
+    background-color: rgb(14, 149, 104);
+    border-radius: 0px;
+    margin: 16px; /* This sets 16px margin on all four sides */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+.right-rectangle-box button:focus{
+    outline: none;
+}
+.right-rectangle-box button:hover{
+    outline: none;
+}
+.button-default-0{
+    width: auto;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.467);
+    border: 1px solid rgba(0, 0, 0, 0.467);
+    border-radius: 4px;
+    font-weight: 400;
+    outline: none;
+}
+.button-default-0:focus{
+ outline: none;
+ border: 1px solid rgba(20, 219, 159, 0.818);
+ color:  rgba(20, 219, 159, 0.818);;
+}
+.button-default-0:hover{
+ outline: none;
+ border: 1px solid rgba(20, 219, 159, 0.818);
+ color:  rgba(20, 219, 159, 0.818);
+}
+
+.top-parent-default{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 392px;
+    height: 48px;
+    margin-top: -16px;
+    margin-left: -32px;
+}
+
+.button-default-2{
+    width: 392px;;
+    margin-left: 32px;
+    margin-right: 32px;
+    color: rgba(0, 0, 0, 0.651);
+    background-color: rgba(220, 220, 220, 0.612);
+    border-radius: 0px;
+}
+
+.button-default-2:focus{
+    outline: none;
+}
+
+.button-default-3{
+    width: 392px;
+    height: 32px;
+    color: rgba(0, 0, 0, 0.651) !important;
+    background-color: transparent !important;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    border: none;
+}
+
+.button-default-3:focus{
+    outline: none;
+    border-bottom: 1px solid rgba(20, 219, 159, 0.818);;
+}
+
+
+
+.schedule-text-default-0{
+   padding-left: 16px;
+   margin-top: 8px;
+   font-weight: 500;
+}
+.schedule-text-default-1{
+    padding-left: 16px;
+    margin-top: -16px;
+    font-weight: 300;
+ }
+ .schedule-text-default-2{
+    padding-left: 16px;
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 12px;
+ }
+ .schedule-text-default-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    box-sizing: border-box; 
+    width: 392px;
+    margin-left: -32px;
+ }
+.right-rectangle-box hr{
+    margin: 16px;
+}
+.default-display-flex{
+    display: flex;
+    background-color: green;
+    height: 60px;
+}
+.hr-default-1{
+    margin-top: -24px;
+}
+.top-parent-default-0{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 392px;
+    height: 48px;
+    margin-top: -16px;
+    margin-left: -32px;
+    box-sizing: border-box;
+    background-color: yellow; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: calc(100% - 32px); /* Adjust width to account for margins */
+    color: white;
+    border-radius: 0px;
+    height: 48px;
+    margin-top: -16px; /* This sets 16px margin on all four sides */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.text-background-0{
+    height: 48px;
+    width: 100%;
+    background-color: rgba(56, 211, 225, 0.267);
+    border-radius: 0px;
+    border: 1px solid rgba(11, 145, 157, 0.912) ;
+    margin-top: -8px;
+}
+.text-highlight-0{
+    font-size: 12px;
+    color: rgba(11, 145, 157, 0.912);
+    padding-left: 4px;
+}
+.text-background-1{
+    font-size: 16px;
+    background-color: rgba(75, 84, 85, 0.107);
+    padding-left: 4px;
+    color: black;
+    height: 40px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 408px;
+}
+.same-line-default{
+    display: inline;
+}
+.button-default-2{
+    width: 428px;
+    height: 40px;
+    background-color: rgba(232, 11, 85, 0.837);
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-default-2:focus{
+    outline: none;
+}
+.button-default-2:hover{
+    outline: none;
+}
