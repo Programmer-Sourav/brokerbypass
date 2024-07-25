@@ -14,6 +14,9 @@ import SearchBar from './SearchBar'
 import PropertyOverlayCard from './PropertyOverlayCard'
 import PropertyDetails from './PropertyDetails'
 import QuickViewPropertyItem from './CardComponents/QuickViewPropertyItem'
+import ScheduleVisitInitial from './ScheduleVisit/ScheduleVisitInitial'
+import ScheduleVisitSecond from './ScheduleVisit/ScheduleVisitSecond'
+import MorningDiv from './ScheduleVisit/MorningDiv'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,7 +33,10 @@ function App() {
     {/* <PropertyListMap/> */}
     {/* <SearchBar/>
     <PropertyOverlayCard/> */}
-    <PropertyDetails/>
+    {/* <PropertyDetails/> */}
+    {/* <ScheduleVisitInitial/> */}
+    <ScheduleVisitSecond/>
+    <MorningDiv/>
     </div>
     
     
