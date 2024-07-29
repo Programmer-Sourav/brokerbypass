@@ -5,7 +5,7 @@ import "./subheader.css"
 export default function SubHeader(){
 
     return(
-        <header className="header"> 
+        <header className="header-0"> 
         <div className="input-parent-default">
         <input type="search" placeholder="Add more..." onChange={()=>{onChangeSearch()}} className="input-default"/>
         <button className="btn-default">Search</button>

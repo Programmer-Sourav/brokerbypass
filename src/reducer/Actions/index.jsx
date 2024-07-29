@@ -44,6 +44,89 @@ export const fetchDataForCommercialPropertyFailure = (error) =>({
     error
 })
 
+
+export const postPropertyDetailsByOwnerRequest = () =>{
+    type: "POST_PROPERTY_DETAILS_BY_OWNER_REQUEST"
+}
+
+export const postPropertyDetailsByOwnerSucces = (data) =>({
+    type: "POST_PROPERTY_DETAILS_BY_OWNER_SUCCESS",
+    payload: data
+})
+
+export const postPropertyDetailsByOwnerFailure = (error) =>{
+    type: "POST_PROPERTY_DETAILS_BY_OWNER_FAILURE",
+    error
+}
+
+export const inputSearchQuery = (data) =>({
+  type: "SEARCH",
+  payload: data
+})
+
+export const setSelectedCity = (data) =>(
+    {
+        type: "SELECT_CITY", 
+        payload: data
+    }
+)
+
+export const setSelectedPlotType = (data) =>(
+    {
+        type: "SELECTED_PLOT_TYPE", 
+        payload: data
+    }
+)
+
+export const setSelectedBHKType = (data) =>(
+    {type: "SELECTED_BHK_TYPE", 
+     payload: data
+    }
+)
+
+export const setPropertyStatus = (data) =>(
+    {
+    type: "SELECTED_AVAILABILITY_TYPE", 
+    payload: data
+})
+
+export const setCommercialPropertyHoldingStatus = (data) =>(
+    {
+        type: "COMMERCIAL_PROPERTY_HOLDING_STATUS",
+        payload: data
+    }
+)
+
+export const setCurrentSelection = (data) =>(
+    {type: "CURRENT_SELECTION",
+      payload: data  
+    }
+)
+
+export const setPreferredTenets = (data) =>({
+    type: "PREFERRED_TENETS",
+    payload: data
+})
+
+export const setPropertyType = (data) =>(
+    {
+        type: "SELECTED_PROPERTY_TYPE", 
+        payload: data
+    }
+)
+
+export const setSelectedFurnishing = (data) =>(
+    {
+        type: "SELECTED_FURNISHING",
+        payload: data
+    }
+)
+
+export const setSelectedParking = (data) =>({
+    type: "SELECTED_PARKING",
+    payload: data
+})
+
 export const fetchPropertyForRentData = () =>{
     return async(dispatch) =>{
         dispatch(fetchPropertyForRentRequest());
@@ -83,6 +166,20 @@ export const fetchDataForCommercialPropertyData = () =>{
         }
         catch(error){
             dispatch(fetchDataForCommercialPropertyFailure(error.message))
+        }
+    }
+}
+
+export const postPropertyDetailsByOwner = () =>{
+    return async(dispatch) =>{
+        dispatch(postPropertyDetailsByOwnerRequest());
+        try{
+         const response   = await fetch('https://jsonplaceholder.typicode.com/posts', {method: "POST"})
+         const data = await response.json();
+         dispatch(postPropertyDetailsByOwnerSucces(data))
+        }
+        catch(error){
+            dispatch(postPropertyDetailsByOwnerFailure(error.message))
         }
     }
 }

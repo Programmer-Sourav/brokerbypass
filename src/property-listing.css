@@ -1,0 +1,19 @@
+.body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica','Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container-default-1{
+    display: flex;
+    background-color: yellow;
+    
+}
+.conatiner-default-0{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}

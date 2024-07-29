@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import "./appstartpage.css"
 import Navigationbar from "./Navigationbar"
 import RentDiv from "./RentDiv"
@@ -7,21 +7,37 @@ import CommercialDiv from "./CommercialDiv"
 import HomePic from "./assets/home.png"
 import ListPic from "./assets/list_fp.png"
 import BlockPic from "./assets/userblock.png"
+import { useDispatch, useSelector } from "react-redux"
+import { inputSearchQuery, postPropertyDetailsByOwner, setSelectedCity, setSelectedPlotType } from "./reducer/Actions"
 
 export default function FirstHome(){
 
     const [selectedTab, setSelectedTab] = useState("Buy")
-    const onSearchChange = () =>{
+    const onSearchChange = (e) =>{
+        dispatch(inputSearchQuery(e.target.value))
+    }
 
+    const onselectionChange = (e) =>{
+        dispatch(setSelectedCity(e.target.value))
+    }
+
+    const onPlotSelection = (e) =>{
+        dispatch(setSelectedPlotType(e.target.value))
     }
 
     const onSearchClick = () =>{
 
     }
 
-    const postFreePropertyAdv = () =>{
-
+    const postFreePropertyAdv = (propertyDetails) =>{
+      dispatch(postPropertyDetailsByOwner(propertyDetails))
     }
+
+    const dispatch = useDispatch();
+
+    const {loading, searchQuery, error, selectedCity, selectedPlotType} = useSelector((state)=>state.data);
+
+  
 
     return(
         <div className="body">
@@ -36,7 +52,7 @@ export default function FirstHome(){
         </div>
         <div className="parent-div">
         <div className="searchholder">
-           <select value={""} onChange={()=>onselectionchange()} className="searchdropdown">
+           <select value={selectedCity} onChange={onselectionChange} className="searchdropdown">
             <option>Bangalore</option>
             <option>Pune</option>
             <option>Chennai</option>
@@ -44,7 +60,7 @@ export default function FirstHome(){
             <option>Mumbai</option>
             <option>Pune</option>
            </select>
-           <input type="search" placeholder="Search upto 3 localities or landmarks" value={""} onChange={()=>onSearchChange()} className="searchbar"/>
+           <input type="search" placeholder="Search upto 3 localities or landmarks" value={searchQuery} onChange={onSearchChange} className="searchbar"/>
            <button onClick={()=>{onSearchClick()}} className="searchbutton">Search</button>
            </div>
            {selectedTab==="1" ? <RentDiv/> :""}
