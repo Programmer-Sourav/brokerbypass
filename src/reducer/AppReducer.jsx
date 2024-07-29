@@ -1,4 +1,5 @@
 const initialState = {
+
     loading: false,
     propertiesToBuy: [],
     propertiesForRent: [],
@@ -7,7 +8,18 @@ const initialState = {
     searchQuery: "", 
     selectedCity: "", 
     propertyDetails: {}, //for owner
-    plotType: "full-house",
+    selectedPlotType: "full-house",
+    selectedBHKType: "", 
+    selectedPropertyStatus: "",
+    selectedAvaiabilityType: "",
+    newBuilderProjectsSelected: false,
+    commercialPropHoldingStatus: "rent",
+    currentSelection: "",
+    preferredTenets: "",
+    selectedPropertyType:"",
+    selectedFurnishing: "", 
+    selectedParking: ""
+
 }
 
 
@@ -39,6 +51,32 @@ const appReducer = (state = initialState, action) =>{
         return {...state, searchQuery : action.payload}
         case 'SELECT_CITY':
         return {...state, selectedCity: action.payload}
+        case 'SELECTED_PLOT_TYPE': 
+        return {...state, selectedPlotType: action.payload}
+
+        case 'SELECTED_BHK_TYPE': 
+        return {...state, selectedBHKType : action.payload}
+        case 'SELECTED_PROPERTY_STATUS':
+        return {...state, selectedPropertyStatus: action.payload}
+        case 'SELECTED_AVAILABILITY_TYPE':
+        return {...state, selectedAvaiabilityType: action.payload}  
+        case 'BUILDER_PROJECTS_SELECTED':
+        return {...state, newBuilderProjectsSelected: action.payload}  
+        case 'COMMERCIAL_PROPERTY_HOLDING_STATUS': 
+        return {...state, commercialPropHoldingStatus: action.payload}
+
+
+        case 'CURRENT_SELECTION': 
+        return {...state, currentSelection: action.payload}
+
+        case 'PREFERRED_TENETS':
+        return {...state, preferredTenets: action.payload}
+        case 'SELECTED_PROPERTY_TYPE':
+        return {...state, selectedPropertyType: action.payload}  
+        case 'SELECTED_FURNISHING':
+        return {...state, selectedFurnishing: action.payload}
+        case 'SELECTED_PARKING':
+        return {...state, selectedParking: action.payload}  
 
         default: 
         return state

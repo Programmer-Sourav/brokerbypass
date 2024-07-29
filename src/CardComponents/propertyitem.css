@@ -11,6 +11,8 @@
     width: 752px;
     height: 420px;
     background-color: rgba(220, 220, 220, 0.312);
+    margin-top: 16px;
+    margin-left: 16px;
 }
 .room-details-price{
     display: flex;

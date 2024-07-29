@@ -17,6 +17,7 @@ import QuickViewPropertyItem from './CardComponents/QuickViewPropertyItem'
 import ScheduleVisitInitial from './ScheduleVisit/ScheduleVisitInitial'
 import ScheduleVisitSecond from './ScheduleVisit/ScheduleVisitSecond'
 import MorningDiv from './ScheduleVisit/MorningDiv'
+import SecondPage from './SecondPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,11 +25,8 @@ function App() {
   return (
     <div className='App'>
    
-    <FirstHome/>
-     {/* <PropertyListItem/> */}
-    {/*<SubHeader/> */}
-    {/* <NavigationLeft/> */}
-    {/* <PropertyListingPage/> */}
+    {/* <FirstHome/> */}
+    <SecondPage/>
     {/* <NavigationBarExtended/> */}
     {/* <PropertyListMap/> */}
     {/* <SearchBar/>

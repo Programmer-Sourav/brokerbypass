@@ -16,6 +16,8 @@
     flex-direction: column;
     height: auto;
     background-color: rgba(220, 220, 220, 0.345);
+    margin-top: 64px;
+    margin-left: 16px;
 }
 .top-details{
     display: flex;
