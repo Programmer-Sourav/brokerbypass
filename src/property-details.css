@@ -1,9 +1,9 @@
-.body{
+/* .body{
     margin: 0;
     padding: 0;
     font-family: Assistant, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica','Arial', sans-serif;
     box-sizing: border-box;
-}
+} */
 .details-header{
     display: flex;
     justify-content: space-between;
@@ -102,6 +102,16 @@
  height: 512px;
  width: 860px;
  background-color: gainsboro;
+ overflow: hidden;
+ position: relative;
+}
+.details-container-image-slider img {
+  position: absolute;
+  width: 720px;
+  height: 512px;
+  border: none;
+  overflow: hidden; /* Hide scrollbars */
+  object-fit: contain;
 }
 .details-btn-footer{
     display: flex;
@@ -208,8 +218,7 @@
  .parent-default1{
     border: 1px solid gainsboro;
     width: 100%;
-    height: 240px;
-    background-color: #ffffff;
+    height: 640px;
     box-shadow: rgba(128, 128, 128, 0.379);
     margin-top: 16px;
  }
@@ -243,7 +252,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
+    width: 100%;
+    height: auto;
   }
   .overview-default-2{
     display: flex;
