@@ -1,0 +1,127 @@
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica','Arial', sans-serif;
+    box-sizing: border-box;
+} 
+
+.default-box-holder{
+    border: 1px solid gainsboro;
+    width: 80%;
+    height: 512px;
+    margin-left: 64px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.h2-style{
+    margin-left: 64px;
+}
+
+.h4-style{
+    margin-top: -8px;
+}
+.p-style{
+    margin-left: 64px;
+    color: gray;
+}
+
+.left-box{
+    width: 320px;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.right-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-width: 512px;
+    margin-top: 128px;
+    min-width: 1024px;
+}
+
+.select-box-2{
+    width: 320px;
+    height: 40px;
+    margin-top: -160px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+}
+.select-box-2:focus{
+    outline: none;
+}
+
+.property-type-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    width: 460px;
+    border: 1px solid rgb(210, 207, 207);
+}
+
+.property-type-holder .inner-component{
+    width: 153px;
+    border-right: 1px solid rgb(210, 207, 207) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.property-type-holder .inner-component h4{
+    font-weight: 600;
+}
+
+.property-type-holder-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 128px;
+    width: 720px;
+    border: 1px solid rgb(210, 207, 207);
+}
+
+.property-type-holder-2 .button-style{
+  width: 128px;
+  height: 40px;
+  background-color: rgb(77, 170, 139);
+  color: white;
+  border-radius: 2px;
+  margin: 4px;
+}
+
+.property-type-holder-3 .button-style{
+    width: 128px;
+    height: 40px;
+    background-color: rgb(77, 170, 139);
+    color: white;
+    border-radius: 2px;
+    margin: 4px;
+    margin-top: -16px;
+}
+
+.property-info-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.property-info-holder h5{
+    margin-top: -16px;
+    text-align: center;
+}
+.post-button{
+    background-color: rgb(234, 42, 74);
+    color: white;
+    min-width: 512px;
+    max-width: 752px;
+    border-radius: 0px;
+    margin-top: 16px;
+}

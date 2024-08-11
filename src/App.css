@@ -1,4 +1,13 @@
-#root {
+#root{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica','Arial', sans-serif;
+  box-sizing: border-box;
+  background-color: rgb(243, 240, 240);
+}
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +48,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

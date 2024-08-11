@@ -24,7 +24,7 @@ export default function FirstHome(){
     }
 
     return(
-        <div className="body">
+        <>
         <Navigationbar/>
         <h1 className="headingprompt">
             World's First Free & NoBrokerage Property Site To Help Community
@@ -115,7 +115,7 @@ export default function FirstHome(){
                 </div>
             </div>
            </footer>
-           </div>
+           </>
 
       
       

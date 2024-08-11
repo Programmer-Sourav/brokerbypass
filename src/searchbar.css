@@ -11,9 +11,9 @@
 .search-bar-default-2 {
     border: 1px solid black;
     border-radius: 16px;
-    height: 40px;
+    height: 32px;
     padding: 8px;
-    width: calc(100% - 48px); /* Adjust width to accommodate the button */
+    width: calc(100% - 60px); /* Adjust width to accommodate the button */
     box-sizing: border-box;
 }
 .search-bar-default-3 {
@@ -47,9 +47,9 @@
 }
 
 .button-sm2 {
-    width: 40px;
+    width: 60px;
     height: 40px;
-    background-color: rgb(215, 53, 75);
+    background-color: rgb(215, 53, 75) !important;
     border: none;
     position: absolute;
     right: 8px;

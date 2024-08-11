@@ -1,0 +1,38 @@
+.calendarview{
+    width: 420px;
+    height: 128px;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(254,
+            126,
+            126,
+            0.7);
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 72px;
+}
+
+.content {
+    position: relative;
+    background: white;
+    padding: 1em 2em;
+    border-radius: 4px;
+    width: 512px;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.closebtn{
+    position: 'absolute';
+    margin-top: '10px';
+    margin-right: '10px';
+    color: '#fe0606';
+    font-size: '30px';
+    text-decoration: none;
+}

@@ -4,12 +4,12 @@ import SearchIcon from "./assets/search.png"
 export default function SearchBar(){
 
     return(
-        <div class="search-bar-decorator">
+    <div class="search-bar-decorator">
     <input type="text" class="search-bar-default-2" placeholder="Add More"/>
     <button class="button-sm2"><img src={SearchIcon} alt="Search"/></button>
     <div className="search-bar-default-3">
     <select value={""} onChange={()=>{onSearchChange()}} className="select-default-2">
-        <option>BHK Type</option>
+        <option value="BHK Type">BHK Type</option>
         <option>BHK Type</option>
         <option>BHK Type</option>
         <option>BHK Type</option>
