@@ -2,10 +2,18 @@
     display: flex;
     flex-direction: column;
     width: 340px;
-    background-color: tan;
-    margin-top: 64px;
+<<<<<<< Updated upstream
+=======
+    background-color: #FFFFFF;
+    margin-top: 128px;
     padding-left: 32px;
+    margin-left: 128px;
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+    position: fixed;
+>>>>>>> Stashed changes
 }
+
 .default-right-nav{
     display: flex;
     flex-direction: row;
@@ -23,6 +31,11 @@
     font-weight: 200;
     border-radius: 0px;
     margin: 8px;
+    outline: transparent;
+    border: transparent;
+}
+.default-button-select :focus{
+    outline: transparent;
 }
 
 .default-flex-col{

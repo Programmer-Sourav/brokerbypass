@@ -18,25 +18,46 @@ import ScheduleVisitInitial from './ScheduleVisit/ScheduleVisitInitial'
 import ScheduleVisitSecond from './ScheduleVisit/ScheduleVisitSecond'
 import MorningDiv from './ScheduleVisit/MorningDiv'
 import SecondPage from './SecondPage'
+import { Route, Routes } from 'react-router-dom'
+import CalendarComponent from './ScheduleVisit/CalendarComponent'
+import DummyModal from './ScheduleVisit/DummyModal'
+import { ChakraProvider } from '@chakra-ui/react'
+import CustomPopover from './ScheduleVisit/CustomPopover'
+import SellRentOne from './PostPropertyUI/SellRentOne'
+import PropertyDetailsPage from './PostPropertyUI/PropertyDetailsPage'
+import LocationDetailsPage from './PostPropertyUI/LocalityDetailsPage'
+import AminetesPage from './PostPropertyUI/AminetesPage'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className='App'>
-   
+      <Routes>
+        <Route path='' element=""/>
+      </Routes>
+      {/* <ScheduleVisitSecond/> */}
+     
+      {/* <ScheduleVisitSecond/>  */}
+      {/* <ChakraProvider>
+     <CustomPopover/>
+     </ChakraProvider> */}
     {/* <FirstHome/> */}
-    <SecondPage/>
+    {/* <SecondPage/> */}
     {/* <NavigationBarExtended/> */}
     {/* <PropertyListMap/> */}
     {/* <SearchBar/>
     <PropertyOverlayCard/> */}
     {/* <PropertyDetails/> */}
+    {/* <PropertyListMap/> */}
     {/* <ScheduleVisitInitial/> */}
     {/* <ScheduleVisitSecond/>
     <MorningDiv/> */}
+    {/* <ScheduleVisitSecond/> */}
+    {/* <DummyModal/> */}
+    {/* <SellRentOne/> */}
+    {/* <PropertyDetailsPage/> */}
+    {/* <LocationDetailsPage/> */}
+    <AminetesPage/>
     </div>
-    
     
   )
 }

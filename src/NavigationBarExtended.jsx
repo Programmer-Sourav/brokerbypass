@@ -3,14 +3,23 @@ import Logo from "./assets/nb_logo_new_trans.svg"
 import { useDispatch, useSelector } from "react-redux"
 import { setCurrentSelection } from "./reducer/Actions";
 
+import { useDispatch, useSelector } from "react-redux"
+import { setCurrentSelection } from "./reducer/Actions";
+import SubHeader from "./SubHeader";
+import DDIcons from "./assets/dropdownselect.png"
+
+
 export default function NavigationBarExtended(){
 
     const dropdownItems = [{category: "Residential", values: ["Rent", "Buy", "Pg/Hostel", "Flatmates", "Land/Plot"] }, 
                            {category: "Commercial", values: ["Rent", "Buy"]}]
 
+
     const currentSelection = useSelector((state)=>state.data);
 
     const dispatch = useDispatch();
+
+
 
 
     function onselectionchange(selectedValue){
@@ -18,19 +27,24 @@ export default function NavigationBarExtended(){
     }
 
     return(
-        <div className="body">
+        <div className="header-default">
         <header className="header-default-nb"> 
         <span className="companylogo">
             <img src={Logo} alt="logo"/>
         </span>
         <span><select value={currentSelection} onChange={(e)=>{onselectionchange(e.target.value)}} className="select-default-transparent">
-             <option>Rent</option>
-             <option>Buy</option>
-             <option>Rent</option>
-             <option>Rent</option>
-             <option>Rent</option>
-             <option>Rent</option>
-             <option>Rent</option>
+              {
+                dropdownItems.map((item, index)=>(
+                    <optgroup key ={index} label = {item.category} className="group-details">
+                        {
+                            item.values.map((value, idx)=>(
+                                <option key={idx}>{value}</option>
+                            ))
+                        }
+                    </optgroup>
+                ))
+              }
+              
             </select></span>
         <nav className="nav-bar">
         <button className="btn-default-nb">For Property owners</button>
@@ -41,6 +55,7 @@ export default function NavigationBarExtended(){
         </div>
         </nav>
         </header>
+        <SubHeader/>
         </div>
     )
 }

@@ -11,15 +11,18 @@ const initialState = {
     selectedPlotType: "full-house",
     selectedBHKType: "", 
     selectedPropertyStatus: "",
-    selectedAvaiabilityType: "",
+    selectedAvaiabilityType: "Immediate",
     newBuilderProjectsSelected: false,
     commercialPropHoldingStatus: "rent",
     currentSelection: "",
-    preferredTenets: "",
-    selectedPropertyType:"",
-    selectedFurnishing: "", 
-    selectedParking: ""
-
+    selectedSortingValue: [],
+    ownerDetails: "",
+    preferredTenets: [],
+    selectedPropertyType:[],
+    selectedFurnishing: [], 
+    selectedParking: [],
+    sortedData: [],
+    onlyLeasedProperties: false
 }
 
 
@@ -68,15 +71,70 @@ const appReducer = (state = initialState, action) =>{
 
         case 'CURRENT_SELECTION': 
         return {...state, currentSelection: action.payload}
+        case 'SELECTED_SORT_VALUE': 
+        if(state.selectedSortingValue.includes(action.payload)){
+            console.log(6661, action.payload)
+            return {...state, selectedSortingValue: state.selectedSortingValue.filter((sortVal)=>sortVal!==action.payload)}
+        }
+        else{
+             console.log(6662, action.payload)
+            return {...state, selectedSortingValue: [...state.selectedSortingValue, action.payload]}
+        }
+        case 'OWNER_DETAILS':
+        return {...state, ownerDetails: action.payload}  
+        
+        case 'LEASED_PROPERTIES_ONLY': 
+        return {...state, onlyLe}
 
         case 'PREFERRED_TENETS':
-        return {...state, preferredTenets: action.payload}
+         if(state.preferredTenets.includes(action.payload)){
+            return {...state, preferredTenets : state.preferredTenets.filter((tenets)=>tenets!==action.payload)}
+        }
+        else{
+            return {...state, preferredTenets: [...state.preferredTenets, action.payload]}
+        }
         case 'SELECTED_PROPERTY_TYPE':
-        return {...state, selectedPropertyType: action.payload}  
+         if(state.selectedPropertyType.includes(action.payload)){
+            return {...state, selectedPropertyType: state.selectedPropertyType.filter((propertyType)=>propertyType!==action.payload)}
+         }
+         else{
+            return {...state, selectedPropertyType : [...state.selectedPropertyType, action.payload]}
+         }
         case 'SELECTED_FURNISHING':
-        return {...state, selectedFurnishing: action.payload}
+        if(state.selectedFurnishing.includes(action.payload)){
+            return {...state, selectedFurnishing: state.selectedFurnishing.filter((selFurnish)=>selFurnish!==action.payload)}
+        }
+        else{
+            return {...state, selectedFurnishing: [...state.selectedFurnishing, action.payload]}
+        }
         case 'SELECTED_PARKING':
-        return {...state, selectedParking: action.payload}  
+        if(state.selectedParking.includes(action.payload)){
+            console.log(6662, action.payload)
+            return {...state,  selectedParking: state.selectedParking.filter((selParking)=>selParking!==action.payload)}
+        } 
+        else{
+            return {...state, selectedParking: [...state.selectedParking, action.payload]}
+        }
+
+        case 'SORTED_DATA': 
+        //sort
+        switch(action.payload){
+            case "rating":
+                //may be better to get it from api
+                return;
+            case "newest":
+                return;
+            case "oldest":
+                return;
+            case "lth":
+                return;
+            case "htl":
+                return;
+            case "earliest":
+                return;
+            case "other":      
+               return;      
+        }
 
         default: 
         return state
