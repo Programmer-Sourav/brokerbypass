@@ -6,13 +6,8 @@ export default function SubHeader(){
 
 
     return(
-<<<<<<< Updated upstream
-        <header className="header"> 
-        <div className="input-parent-default">
-=======
         <div className="sub-header"> 
         <div className="input-parent-default-one">
->>>>>>> Stashed changes
         <input type="search" placeholder="Add more..." onChange={()=>{onChangeSearch()}} className="input-default"/>
         <button className="btn-default">Search</button>
         </div>

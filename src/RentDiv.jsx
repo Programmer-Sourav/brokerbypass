@@ -28,19 +28,7 @@ export default function RentDiv(){
             <label>
             <input type="radio" value="full-house" checked={selectedPlotType==="full-house"} className="radiobtn" onChange={(e)=>{onSelectPlot(e.target.value)}}/>Full House </label>
             <label>
-<<<<<<< Updated upstream
-            <input type="radio" value={""} checked={""} className="radiobtn" onChange={()=>{onSelectLand()}}/> Land/Plot</label>
-            <select value = {""} onChange={()=>{onBHKTypeSelection()}} className="default-box">
-                <option>BHK Type</option>
-                <option>1 RK</option>
-                <option>1 BHK</option>
-                <option>2 BHK</option>
-            </select>
-            <select value = {selectedBHKType} onChange={(e)=>{onPropertySelection(e.target.value)}} className="default-box">
-                <option>Property status</option>
-                <option>Under Construction</option>
-                <option>Ready</option>
-=======
+
             <input type="radio" value="Land-and-plot" checked={selectedPlotType==="Land-and-plot"} className="radiobtn" onChange={(e)=>{onSelectPlot(e.target.value)}}/> Land/Plot</label>
             <select value = {selectedBHKType} onChange={(e)=>{onBHKTypeSelection(e.target.value)}} className="default-box">
                 <option value="BHK Type">BHK Type</option>
@@ -52,7 +40,7 @@ export default function RentDiv(){
                 <option value="Property status">Property status</option>
                 <option value="Under Construction">Under Construction</option>
                 <option value="Ready">Ready</option>
->>>>>>> Stashed changes
+
             </select>
             <div className="default-box">
             <label>

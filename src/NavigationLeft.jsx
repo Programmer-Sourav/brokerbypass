@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
 import "./navigationleft.css"
-import { useDispatch, useSelector } from "react-redux"
 import { setPreferenceForLeasedProperties, setPreferredTenets, setPropertyStatus, setPropertyType, setSelectedBHKType, setSelectedFurnishing, setSelectedParking } from "./reducer/Actions"
 export default function NavigationLeft(){
 
@@ -37,6 +36,7 @@ export default function NavigationLeft(){
     dispatch(setPreferenceForLeasedProperties(selectedValue))
   }
 
+
     return(
         <div className="navigation-default">
          <p className="default-bold-text">BHK Type</p>   
@@ -55,6 +55,21 @@ export default function NavigationLeft(){
          <p className="default-bold-text">Availaibility</p>   
          <div className="default-flex-col">
             <label>
+
+            <input type="radio" checked={selectedAvaiabilityType==="Immediate"} onChange={()=>{onRadioChange()}}/> Immediate
+
+            <input type="radio" value={""} checked={true} onChange={()=>{onRadioChange()}}/> Immediate
+
+            </label>
+            <label>
+            <input type="radio" checked={selectedAvaiabilityType==="Within 15 days"} onChange={()=>{onRadioChange()}}/> Within 15 days
+            </label>
+            <label>
+            <input type="radio" checked={selectedAvaiabilityType==="Within 30 days"} onChange={()=>{onRadioChange()}}/> Within 30 days
+            </label>
+            <label>
+            <input type="radio" value={""} checked={true} onChange={()=>{onRadioChange()}}/> After 30 days
+
             <input type="radio" checked={selectedAvaiabilityType==="Immediate"} onChange={()=>{onRadioChange("Immediate")}}/> Immediate
             </label>
             <label>
@@ -65,6 +80,7 @@ export default function NavigationLeft(){
             </label>
             <label>
             <input type="radio" checked={selectedAvaiabilityType==="After 30 days"} onChange={()=>{onRadioChange("After 30 days")}}/> After 30 days
+
             </label>
           </div>
           <p className="default-bold-text">Preferred Tenants</p>

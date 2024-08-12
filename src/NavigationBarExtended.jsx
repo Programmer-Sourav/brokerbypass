@@ -2,11 +2,8 @@ import "./navbarextended.css"
 import Logo from "./assets/nb_logo_new_trans.svg" 
 import { useDispatch, useSelector } from "react-redux"
 import { setCurrentSelection } from "./reducer/Actions";
-
-import { useDispatch, useSelector } from "react-redux"
-import { setCurrentSelection } from "./reducer/Actions";
 import SubHeader from "./SubHeader";
-import DDIcons from "./assets/dropdownselect.png"
+//import DDIcons from "./assets/dropdownselect.png"
 
 
 export default function NavigationBarExtended(){

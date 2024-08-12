@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     width: 340px;
-<<<<<<< Updated upstream
-=======
     background-color: #FFFFFF;
     margin-top: 128px;
     padding-left: 32px;
@@ -11,7 +9,6 @@
     height: calc(100vh - 160px);
     overflow-y: auto;
     position: fixed;
->>>>>>> Stashed changes
 }
 
 .default-right-nav{
