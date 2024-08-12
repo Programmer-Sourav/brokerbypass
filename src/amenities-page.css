@@ -64,6 +64,27 @@
     border-radius: 2px;
     margin-top: -16px;
 }
+.select-input-box{
+    width: 752px;
+    height: 72px;
+    margin-left: 64px;
+    padding-left: 4px;
+    border: 1px solid rgba(193, 188, 188, 0.859);
+    border-radius: 2px;
+    margin-top: -16px;
+    text-align: start;
+}
+.select-borderless{
+    width: 292px;
+    height: 40px;
+    border: none;
+    margin-left: 64px;
+}
+
+.select-borderless:focus{
+    border: none;
+    outline: transparent;
+}
 .select-small{
     width: 192px;
     height: 40px;
@@ -130,12 +151,25 @@
     width: 292px;
 }
 
+.select-flex-row-3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; /* Space between elements */
+    border: 1px solid gainsboro;
+    margin-left: 64px;
+    padding-left: 0;
+    margin-top: 16px;
+    padding-right: 16px;
+    width: 752px;
+}
+
 .select-flex-row-2 button {
     background-color: gainsboro;
     border: none;
     color: white;
-    height: 40px;
-    width: 40px; /* You can adjust the width as needed */
+    height: 32px;
+    width: 64px; /* You can adjust the width as needed */
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -149,6 +183,11 @@
 .select-flex-row-2 button:hover {
     background-color: gainsboro;
 }
+.select-flex-row-2 button:focus {
+    background-color: gainsboro;
+    outline: none;
+    border: none;
+}
 
 .select-flex-row-2 p {
     margin: 0;
@@ -157,4 +196,33 @@
     line-height: 40px; /* Ensures the text is centered vertically */
     min-width: 40px; /* Ensures the counter text has the same height as buttons */
     text-align: center;
+}
+
+.img-small{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+.btn-inner-small-5 {
+    width: 88px !important;
+    height: 32px !important;
+    background-color: transparent !important;
+    border: 1px solid gray !important;
+    border-radius: 2px !important;
+    color: rgb(84, 81, 81) !important;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Remove default padding if needed */
+    text-align: center; /* Ensures text is centered for any other content */
+}
+
+.btn-inner-small-5:focus{
+    background-color: #00806f !important;
+    border: none !important;
+    outline: none !important;
+    color: white !important;
 }
