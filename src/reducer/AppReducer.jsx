@@ -15,6 +15,10 @@ const initialState = {
     newBuilderProjectsSelected: false,
     commercialPropHoldingStatus: "rent",
     currentSelection: "",
+    preferredTenets: "",
+    selectedPropertyType:"",
+    selectedFurnishing: "", 
+    selectedParking: "",
     selectedSortingValue: [],
     ownerDetails: "",
     preferredTenets: [],
@@ -22,7 +26,8 @@ const initialState = {
     selectedFurnishing: [], 
     selectedParking: [],
     sortedData: [],
-    onlyLeasedProperties: false
+    onlyLeasedProperties: false,
+    waterSupply: "Borewell"
 }
 
 
@@ -135,6 +140,9 @@ const appReducer = (state = initialState, action) =>{
             case "other":      
                return;      
         }
+
+        case 'WATER_SUPPLY':
+            return {...state, waterSupply: action.payload}
 
         default: 
         return state
