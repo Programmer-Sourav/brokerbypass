@@ -63,15 +63,33 @@
     border: 1px solid rgba(193, 188, 188, 0.859);
     border-radius: 2px;
     margin-top: -16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select-big:hover{
+  outline: none;
+}
+.select-big:focus{
+  outline: none;
 }
 .select-small{
     width: 192px;
-    height: 40px;
+    height: 32px;
     margin-left: 64px;
     padding-left: 4px;
-    border: 1px solid rgba(193, 188, 188, 0.859);
+    margin-top: 0px;
+    border: none;
     border-radius: 2px;
-    margin-top: -16px;
+}
+.select-small:focus{
+ border: none;
+ outline: none;
+
+}
+.select-small:hover{
+ border: none;
+ outline: none;
 }
 
 .select-holder-flex{
@@ -85,6 +103,30 @@
     flex-direction: column;
 }
 
+.select-flex-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+.select-icon-container {
+    display: flex;
+    align-items: center;
+  }
+.select-row{
+    display: flex;
+    align-items: center;
+}
+
+.select-big-row{
+    width: 292px;
+    height: 40px;
+    margin-left: 64px;
+    padding-left: 4px;
+    border: 1px solid rgba(193, 188, 188, 0.859);
+    border-radius: 2px;
+    margin-top: -16px;
+}
 .select-flex-row{
     display: flex;
     flex-direction: row;
@@ -94,16 +136,59 @@
     flex-wrap: wrap;
 }
 
-.footer-flex-row{
+.select-flex-row-default-height{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 752px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    margin-left: 64px;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 166, 0, 0.604);
+}
+
+.select-flex-row-128{
+    display: flex;
+    flex-direction: row;
+    height: 92px;
+    width: 752px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 64px;
+    margin-top: -16px;
+    border: 1px solid gainsboro;
+}
+.select-flex-row-128:focus{
+  
+    outline: none;
+}
+.select-flex-row-128:hover{
+
+    outline: none;
+}
+.select-flex-row-default{
     display: flex;
     flex-direction: row;
     height: auto;
+    justify-content: space-around;
+    gap: 12px;
+}
+.footer-flex-row{
+    display: flex;
+    flex-direction: row;
+    height: 72px;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
     position: fixed;
     text-align: center;
     bottom: 0;
+    background-color: gainsboro;
 }
 
 .footer-btn-one{
@@ -134,8 +219,8 @@
     background-color: gainsboro;
     border: none;
     color: white;
-    height: 40px;
-    width: 40px; /* You can adjust the width as needed */
+    height: 32px;
+    width: 64px; /* You can adjust the width as needed */
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -149,7 +234,53 @@
 .select-flex-row-2 button:hover {
     background-color: gainsboro;
 }
+.select-flex-row-2 button:focus {
+   outline: none;
+   border: none;
+}
 
+.select-icon-measurements{
+    width: 24px;
+    height: 24px;
+    align-content: center;
+}
+
+.select-icon-measurements-l{
+    width: 32px;
+    height: 32px;
+    align-content: center;
+}
+
+.item-box-large{
+    width: 256px;
+    height: 48px;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    border: 1px solid gainsboro;
+    margin-left: 64px;
+    margin-top: 32px;
+}
+
+.icon-container{
+    width: 72px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.select-icon-measurements-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    align-content: center;
+    width: auto;
+    border: 1px solid gainsboro;
+}
 .select-flex-row-2 p {
     margin: 0;
     font-size: 18px;
@@ -157,4 +288,40 @@
     line-height: 40px; /* Ensures the text is centered vertically */
     min-width: 40px; /* Ensures the counter text has the same height as buttons */
     text-align: center;
+}
+.select-inner-button{
+    width: 92px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid gainsboro;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.select-inner-button:hover{
+    outline: none;
+    border: 1px solid #00806f;
+}
+.select-inner-button:focus{
+    outline: none;
+    border: 1px solid #00806f;
+    background-color: #00806f;
+    color: white;
+}
+.amenities-container{
+    background: #FAFBFC;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 64px;
+}
+.amenities-column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.amenity-item-text{
+    padding-left: 8px;
 }

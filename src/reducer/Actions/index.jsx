@@ -147,6 +147,11 @@ export const sortValue = (data) =>({
     payload: data
 })
 
+export const setWaterAvailabilityValue = (data) =>({
+    type: "WATER_SUPPLY", 
+    payload: data
+})
+
 export const fetchPropertyForRentData = () =>{
     return async(dispatch) =>{
         dispatch(fetchPropertyForRentRequest());
