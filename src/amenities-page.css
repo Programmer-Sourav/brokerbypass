@@ -119,6 +119,13 @@
     display: flex;
     flex-direction: row;
     height: auto;
+    justify-content: space-around;
+    gap: 12px;
+}
+.footer-flex-row{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
@@ -214,15 +221,16 @@
     color: rgb(84, 81, 81) !important;
     font-weight: 400;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0; /* Remove default padding if needed */
-    text-align: center; /* Ensures text is centered for any other content */
+    justify-content: space-evenly;
+    min-width: 1024px;
+    min-height: 920px;
+    margin-left: 64px;
 }
-
-.btn-inner-small-5:focus{
-    background-color: #00806f !important;
-    border: none !important;
-    outline: none !important;
-    color: white !important;
+.amenities-column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.amenity-item-text{
+    padding-left: 8px;
 }
