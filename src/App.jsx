@@ -18,15 +18,8 @@ import ScheduleVisitInitial from './ScheduleVisit/ScheduleVisitInitial'
 import ScheduleVisitSecond from './ScheduleVisit/ScheduleVisitSecond'
 import MorningDiv from './ScheduleVisit/MorningDiv'
 import SecondPage from './SecondPage'
-import { Route, Routes } from 'react-router-dom'
-import CalendarComponent from './ScheduleVisit/CalendarComponent'
-// import DummyModal from './ScheduleVisit/DummyModal'
-//import { ChakraProvider } from '@chakra-ui/react'
-//import CustomPopover from './ScheduleVisit/CustomPopover'
-//import SellRentOne from './PostPropertyUI/SellRentOne'
-import PropertyDetailsPage from './PostPropertyUI/PropertyDetailsPage'
-//import LocationDetailsPage from './PostPropertyUI/LocalityDetailsPage'
-import AminetesPage from './PostPropertyUI/AminetesPage'
+import PhotoUploadGallery from './PostPropertyUI/PhotoUploadGalley'
+import SchedulePage from './PostPropertyUI/SchedulePage'
 
 function App() {
   return (
@@ -51,12 +44,8 @@ function App() {
     {/* <ScheduleVisitInitial/> */}
     {/* <ScheduleVisitSecond/>
     <MorningDiv/> */}
-    {/* <ScheduleVisitSecond/> */}
-    {/* <DummyModal/> */}
-    {/* <SellRentOne/> */}
-    {/* <PropertyDetailsPage/> */}
-    {/* <LocationDetailsPage/> */}
-    <AminetesPage/>
+    {/* <PhotoUploadGallery/> */}
+    <SchedulePage/>
     </div>
     
   )
