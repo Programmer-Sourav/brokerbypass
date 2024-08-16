@@ -18,7 +18,9 @@ const initialState = {
     preferredTenets: "",
     selectedPropertyType:"",
     selectedFurnishing: "", 
-    selectedParking: ""
+    selectedParking: "",
+    selectOwnerAvailability: "",
+    selectOwnerAvailibilityTime: {startTime: "", endTime: ""}
 
 }
 
@@ -77,6 +79,10 @@ const appReducer = (state = initialState, action) =>{
         return {...state, selectedFurnishing: action.payload}
         case 'SELECTED_PARKING':
         return {...state, selectedParking: action.payload}  
+        case 'SELECTED_OWNER_AVAILABILITY': 
+        return {...state, selectOwnerAvailability: action.payload}
+        case 'SELECTED_OWNER_AVAILABILITY_TIME':
+        return {...state, selectOwnerAvailibilityTime: action.payload}    
 
         default: 
         return state

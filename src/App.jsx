@@ -18,6 +18,7 @@ import ScheduleVisitInitial from './ScheduleVisit/ScheduleVisitInitial'
 import ScheduleVisitSecond from './ScheduleVisit/ScheduleVisitSecond'
 import MorningDiv from './ScheduleVisit/MorningDiv'
 import SecondPage from './SecondPage'
+import SchedulePage from './PostPropertyUI/SchedulePage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,7 +27,7 @@ function App() {
     <div className='App'>
    
     {/* <FirstHome/> */}
-    <SecondPage/>
+    {/* <SecondPage/> */}
     {/* <NavigationBarExtended/> */}
     {/* <PropertyListMap/> */}
     {/* <SearchBar/>
@@ -35,6 +36,7 @@ function App() {
     {/* <ScheduleVisitInitial/> */}
     {/* <ScheduleVisitSecond/>
     <MorningDiv/> */}
+    <SchedulePage/>
     </div>
     
     

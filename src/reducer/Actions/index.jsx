@@ -127,6 +127,18 @@ export const setSelectedParking = (data) =>({
     payload: data
 })
 
+export const setSelectedOwnerAvailability = (data) =>(
+    {
+        type: "SELECTED_OWNER_AVAILABILITY",
+        payload: data
+    }
+)
+
+export const setSelectedOwnerAvailabilityTime = ( data) =>({
+    type: "SELECTED_OWNER_AVAILABILITY_TIME",
+    payload: data
+})
+
 export const fetchPropertyForRentData = () =>{
     return async(dispatch) =>{
         dispatch(fetchPropertyForRentRequest());
