@@ -1,34 +1,13 @@
 import { useDispatch, useSelector } from "react-redux"
 import "../amenities-page.css"
-import WaterDropletIcon from "../assets/water-drop.png"
-import GymIcon from "../assets/gym-gray.png"
-import ChickenIcon from "../assets/chicken.png"
-import SecurityIcon from "../assets/security-guard.png"
-import KeyIcon from "../assets/keys-gray.png"
+import WaterDrop from "../assets/water-drop.png"
+import GymIcon from "../assets/gym-icon.png"
+import NonVegIcon from "../assets/non_veg.png"
+import GatedSecurityIcon from "../assets/security.png"
+import KeyPersonIcon from "../assets/keys.png"
 
+import { setWaterSupplySpecification } from "../reducer/Actions"
 
-///may try to load icons from servers
-import LiftIcon from "../assets/lift.png"
-import WifiIcon from "../assets/wifi-internet.png"
-import AirconditionerIcon from "../assets/air-conditioner.png"
-import ClubHouseIcon from "../assets/club.png"
-import IntercomIcon from "../assets/intercom.png"
-import SwimmingPoolIcon from "../assets/swimming-pool.png"
-import ChildrenPlayArea from "../assets/children.png"
-import FireSafety from "../assets/fire-extinguisher.png"
-import ServantRoomIcon from "../assets/waiter.png"
-import ShoppingIcon from "../assets/shopping-mall.png"
-import GasIcon from "../assets/gas.png"
-import ParkIcon from "../assets/park.png"
-import HarvestingIcon from "../assets/harvesting.png"
-import SewageIcon from "../assets/water-waste.png"
-import HouseKeeperIcon from "../assets/housekeeper.png"
-import PowerBackupIcon from "../assets/battery.png"
-import VisitorParkingIcon from "../assets/car-parking.png"
-
-
-import { setWaterAvailabilityValue } from "../reducer/Actions"
-import { Img } from "@chakra-ui/react"
 
 export default function AminetesPage(){
 
@@ -43,7 +22,10 @@ export default function AminetesPage(){
   }
   const onChangeHandler = () =>{
 
-  }
+   const onChangeWaterSupply = (value) =>{
+      console.log(444, value)
+      setWaterSupplySpecification(dispatch(value))
+   }
 
     return(
                
@@ -71,79 +53,56 @@ export default function AminetesPage(){
 
                 <div className="select-flex"> 
                 <h4>Water Supply*</h4>
-                <div className="select-big">
-                  <div className="select-flex"></div>
-
-                  <span className="icon-container"><img src={WaterDropletIcon} className="select-icon-measurements" alt="water-droplet"/></span>
-               
-                  <select value={""} onChange={(e)=>{setWaterAvailibilityPreference(e.target.value)}} className="select-small">
-                    <option>Borewell</option>
-                    <option>Corporation</option>
-                  </select>
+                <div className="select-flex-row-2">
+                <span><img src={WaterDrop} alt="water-drop" className="img-small"/></span>  
+                <select value ={waterSupply}  onChange={(e)=>{onChangeWaterSupply(e.target.value)}} className="select-borderless">
+                  <option>Select</option>
+                  <option>Borewell</option>
+                  <option>Corporation</option>
+                </select> 
                 </div>
                 </div>
                 <div className="select-flex"> 
                 <h4>Gym*</h4>
-                <div className="select-big">
-                  <div className="select-flex-row-default">
-                  <span className="icon-container">
-                    <img src={GymIcon} className="select-icon-measurements" alt="gym-droplet"/>
-                    
-                    </span>
-                  <button onClick={""} className="select-inner-button">No</button>
-                  <button onClick={""} className="select-inner-button">Yes</button>
-                  </div>
+                <div className="select-flex-row-2">
+                <span><img src={GymIcon} alt="water-drop" className="img-small"/></span>  
+                <span><button onClick={""} className="btn-inner-small-5">No</button></span>
+                <span><button onClick={""} className="btn-inner-small-5">Yes</button></span>
                 </div>
                 </div>
                 <div className="select-flex"> 
                 <h4>Non-Veg Allowed*</h4>
-                <div className="select-big">
-                  <div className="select-flex-row-default">
-                  <span className="icon-container">
-                    <img src={ChickenIcon} className="select-icon-measurements" alt="gym-droplet"/>
-                    
-                    </span>
-                  <button onClick={""} className="select-inner-button">No</button>
-                  <button onClick={""} className="select-inner-button">Yes</button>
-                  </div>
+                <div className="select-flex-row-2">
+                <span><img src={NonVegIcon} alt="water-drop" className="img-small"/></span>  
+                <span><button onClick={""} className="btn-inner-small-5">No</button></span>
+                <span><button onClick={""} className="btn-inner-small-5">Yes</button></span>
                 </div>
                 </div>
                 <div className="select-flex"> 
                 <h4>Gated Security*</h4>
-                <div className="select-big">
-                  <div className="select-flex-row-default">
-                  <span className="icon-container">
-                    <img src={SecurityIcon} className="select-icon-measurements" alt="gym-droplet"/>
-                    
-                    </span>
-                  <button onClick={""} className="select-inner-button">No</button>
-                  <button onClick={""} className="select-inner-button">Yes</button>
-                  </div>
+                <div className="select-flex-row-2">
+                <span><img src={GatedSecurityIcon} alt="water-drop" className="img-small"/></span>  
+                <span><button onClick={""} className="btn-inner-small-5">No</button></span>
+                <span><button onClick={""} className="btn-inner-small-5">Yes</button></span>
                 </div>
                 </div>
                 <div className="select-flex"> 
                 <h4>Who will show the property?*</h4>
-                <div className="select-big">
-                  <div className="select-flex-row-default">
-                  <span className="icon-container">
-                    <img src={KeyIcon} className="select-icon-measurements" alt="gym-droplet"/>
-                    
-                    </span>
-                  <button onClick={""} className="select-inner-button">No</button>
-                  <button onClick={""} className="select-inner-button">Yes</button>
-                  </div>
+                <div className="select-flex-row-2">
+                <span><img src={KeyPersonIcon} alt="water-drop" className="img-small"/></span>  
+                <span><button onClick={""} className="btn-inner-small-5">No</button></span>
+                <span><button onClick={""} className="btn-inner-small-5">Yes</button></span>
                 </div>
                 </div>
                 <div className="select-flex"> 
                 <h4>Secondary Number*</h4>
                 <input type="text" value ={""} className="select-big" placeholder="e.g. xyz street"/>
                 </div>
-                <div className="select-flex-row-default-height"> 
+                <div className="select-flex-row-3"> 
                 <h4>Do you have more similar properties/units available? *</h4>
-                <button onClick={""} className="select-inner-button">No</button>
-                <button onClick={""} className="select-inner-button">Yes</button>
+                <span><button onClick={""} className="btn-inner-small-5">No</button></span>
+                <span><button onClick={""} className="btn-inner-small-5">Yes</button></span>
                 </div>
-                <div className="select-flex"> 
                 <h4>Add Direction Tip for your tenants*</h4>
                 <input type="text" value ={""} className="select-flex-row-128" placeholder="e.g. xyz street"/>
                 </div>

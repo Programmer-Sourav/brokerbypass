@@ -127,28 +127,15 @@ export const setSelectedParking = (data) =>({
     payload: data
 })
 
-export const setOwnerDetails = (data) =>({
-    type: "OWNER_DETAILS",
-    payload: data
-})
+export const setSelectedOwnerAvailability = (data) =>(
+    {
+        type: "SELECTED_OWNER_AVAILABILITY",
+        payload: data
+    }
+)
 
-export const setPreferenceForLeasedProperties = (data) =>({
-    type: "",
-    payload: data
-})
-
-export const setSelectedSortingValue = (data) =>({
-    type: "",
-    payload: data
-})
-
-export const sortValue = (data) =>({
-    type: "",
-    payload: data
-})
-
-export const setWaterAvailabilityValue = (data) =>({
-    type: "WATER_SUPPLY", 
+export const setSelectedOwnerAvailabilityTime = ( data) =>({
+    type: "SELECTED_OWNER_AVAILABILITY_TIME",
     payload: data
 })
 

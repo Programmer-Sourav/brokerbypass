@@ -19,15 +19,9 @@ const initialState = {
     selectedPropertyType:"",
     selectedFurnishing: "", 
     selectedParking: "",
-    selectedSortingValue: [],
-    ownerDetails: "",
-    preferredTenets: [],
-    selectedPropertyType:[],
-    selectedFurnishing: [], 
-    selectedParking: [],
-    sortedData: [],
-    onlyLeasedProperties: false,
-    waterSupply: "Borewell"
+    selectOwnerAvailability: "",
+    selectOwnerAvailibilityTime: {startTime: "", endTime: ""}
+
 }
 
 
@@ -113,36 +107,11 @@ const appReducer = (state = initialState, action) =>{
             return {...state, selectedFurnishing: [...state.selectedFurnishing, action.payload]}
         }
         case 'SELECTED_PARKING':
-        if(state.selectedParking.includes(action.payload)){
-            console.log(6662, action.payload)
-            return {...state,  selectedParking: state.selectedParking.filter((selParking)=>selParking!==action.payload)}
-        } 
-        else{
-            return {...state, selectedParking: [...state.selectedParking, action.payload]}
-        }
-
-        case 'SORTED_DATA': 
-        //sort
-        switch(action.payload){
-            case "rating":
-                //may be better to get it from api
-                return;
-            case "newest":
-                return;
-            case "oldest":
-                return;
-            case "lth":
-                return;
-            case "htl":
-                return;
-            case "earliest":
-                return;
-            case "other":      
-               return;      
-        }
-
-        case 'WATER_SUPPLY':
-            return {...state, waterSupply: action.payload}
+        return {...state, selectedParking: action.payload}  
+        case 'SELECTED_OWNER_AVAILABILITY': 
+        return {...state, selectOwnerAvailability: action.payload}
+        case 'SELECTED_OWNER_AVAILABILITY_TIME':
+        return {...state, selectOwnerAvailibilityTime: action.payload}    
 
         default: 
         return state

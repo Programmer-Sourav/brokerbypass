@@ -70,8 +70,27 @@
 .select-big:hover{
   outline: none;
 }
-.select-big:focus{
-  outline: none;
+.select-small{
+    width: 192px;
+    height: 40px;
+    margin-left: 64px;
+    padding-left: 4px;
+    margin-top: 0px;
+    border: none;
+    border-radius: 2px;
+    margin-top: -16px;
+    text-align: start;
+}
+.select-borderless{
+    width: 292px;
+    height: 40px;
+    border: none;
+    margin-left: 64px;
+}
+
+.select-borderless:focus{
+    border: none;
+    outline: transparent;
 }
 .select-small{
     width: 192px;
@@ -180,6 +199,14 @@
 .footer-flex-row{
     display: flex;
     flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+    gap: 12px;
+}
+.footer-flex-row{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
     height: 72px;
     width: 100%;
     justify-content: center;
@@ -213,6 +240,19 @@
     margin-left: 64px;
     margin-top: -16px;
     width: 292px;
+}
+
+.select-flex-row-3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; /* Space between elements */
+    border: 1px solid gainsboro;
+    margin-left: 64px;
+    padding-left: 0;
+    margin-top: 16px;
+    padding-right: 16px;
+    width: 752px;
 }
 
 .select-flex-row-2 button {
@@ -281,6 +321,12 @@
     width: auto;
     border: 1px solid gainsboro;
 }
+.select-flex-row-2 button:focus {
+    background-color: gainsboro;
+    outline: none;
+    border: none;
+}
+
 .select-flex-row-2 p {
     margin: 0;
     font-size: 18px;
@@ -315,6 +361,36 @@
     background: #FAFBFC;
     display: flex;
     justify-content: flex-start;
+    margin-left: 64px;
+}
+.amenities-column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.amenity-item-text{
+    padding-left: 8px;
+}
+
+.img-small{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+.btn-inner-small-5 {
+    width: 88px !important;
+    height: 32px !important;
+    background-color: transparent !important;
+    border: 1px solid gray !important;
+    border-radius: 2px !important;
+    color: rgb(84, 81, 81) !important;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 1024px;
+    min-height: 920px;
     margin-left: 64px;
 }
 .amenities-column{
