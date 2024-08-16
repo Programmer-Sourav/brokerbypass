@@ -15,5 +15,10 @@
 .conatiner-default-0{
     display: flex;
     flex-direction: column;
-    background-color: red;
+    margin-left: 496px;
+    height: 100vh;
+}
+.conatiner-default-2{
+    display: flex;
+    flex-direction: column;
 }

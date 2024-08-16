@@ -28,17 +28,19 @@ export default function RentDiv(){
             <label>
             <input type="radio" value="full-house" checked={selectedPlotType==="full-house"} className="radiobtn" onChange={(e)=>{onSelectPlot(e.target.value)}}/>Full House </label>
             <label>
+
             <input type="radio" value="Land-and-plot" checked={selectedPlotType==="Land-and-plot"} className="radiobtn" onChange={(e)=>{onSelectPlot(e.target.value)}}/> Land/Plot</label>
             <select value = {selectedBHKType} onChange={(e)=>{onBHKTypeSelection(e.target.value)}} className="default-box">
-                <option>BHK Type</option>
-                <option>1 RK</option>
-                <option>1 BHK</option>
-                <option>2 BHK</option>
+                <option value="BHK Type">BHK Type</option>
+                <option value="1 RK">1 RK</option>
+                <option value="1 BHK">1 BHK</option>
+                <option value="2 BHK">2 BHK</option>
             </select>
             <select value = {selectedBHKType} onChange={(e)=>{onPropertySelection(e.target.value)}} className="default-box">
-                <option>Property status</option>
-                <option>Under Construction</option>
-                <option>Ready</option>
+                <option value="Property status">Property status</option>
+                <option value="Under Construction">Under Construction</option>
+                <option value="Ready">Ready</option>
+
             </select>
             <div className="default-box">
             <label>

@@ -3,7 +3,7 @@ import "../property-details-setting.css"
 import PropertyDetailsImg from "../assets/property_big.png";
 import LocalityDetailsImg from "../assets/location_big.png"
 import RentDetailsImg from "../assets/rent_big.png"
-import AmenitiesImg from "../assets/amenities.png"
+import AmenitiesImg from "../assets/amenities_big.png"
 import GallryImg from "../assets/gallary.png"
 import ScheduleImg from "../assets/calendar_big.png"
 

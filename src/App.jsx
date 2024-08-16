@@ -18,14 +18,21 @@ import ScheduleVisitInitial from './ScheduleVisit/ScheduleVisitInitial'
 import ScheduleVisitSecond from './ScheduleVisit/ScheduleVisitSecond'
 import MorningDiv from './ScheduleVisit/MorningDiv'
 import SecondPage from './SecondPage'
+import PhotoUploadGallery from './PostPropertyUI/PhotoUploadGalley'
 import SchedulePage from './PostPropertyUI/SchedulePage'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className='App'>
-   
+      <Routes>
+        <Route path='' element=""/>
+      </Routes>
+      {/* <ScheduleVisitSecond/> */}
+     
+      {/* <ScheduleVisitSecond/>  */}
+      {/* <ChakraProvider>
+     <CustomPopover/>
+     </ChakraProvider> */}
     {/* <FirstHome/> */}
     {/* <SecondPage/> */}
     {/* <NavigationBarExtended/> */}
@@ -33,12 +40,13 @@ function App() {
     {/* <SearchBar/>
     <PropertyOverlayCard/> */}
     {/* <PropertyDetails/> */}
+    {/* <PropertyListMap/> */}
     {/* <ScheduleVisitInitial/> */}
     {/* <ScheduleVisitSecond/>
     <MorningDiv/> */}
+    {/* <PhotoUploadGallery/> */}
     <SchedulePage/>
     </div>
-    
     
   )
 }

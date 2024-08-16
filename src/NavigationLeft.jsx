@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux"
 import "./navigationleft.css"
-import { setPreferredTenets, setPropertyType, setSelectedBHKType, setSelectedFurnishing, setSelectedParking } from "./reducer/Actions"
+import { setPreferenceForLeasedProperties, setPreferredTenets, setPropertyStatus, setPropertyType, setSelectedBHKType, setSelectedFurnishing, setSelectedParking } from "./reducer/Actions"
 export default function NavigationLeft(){
 
-  const {selectedBHKType, selectedAvaiabilityType, preferredTenets, selectedPropertyType, selectedFurnishing, selectedParking} = useSelector((state)=>state.data)
+  const {selectedBHKType, selectedAvaiabilityType, preferredTenets, selectedPropertyType, selectedFurnishing, selectedParking, onlyLeasedProperties} = useSelector((state)=>state.data)
 
   const dispatch = useDispatch()
  
@@ -32,6 +32,11 @@ export default function NavigationLeft(){
     dispatch(setSelectedParking(selectedValue))
   }
 
+  function onLeasedPropertiesChange(selectedValue){
+    dispatch(setPreferenceForLeasedProperties(selectedValue))
+  }
+
+
     return(
         <div className="navigation-default">
          <p className="default-bold-text">BHK Type</p>   
@@ -50,7 +55,11 @@ export default function NavigationLeft(){
          <p className="default-bold-text">Availaibility</p>   
          <div className="default-flex-col">
             <label>
+
             <input type="radio" checked={selectedAvaiabilityType==="Immediate"} onChange={()=>{onRadioChange()}}/> Immediate
+
+            <input type="radio" value={""} checked={true} onChange={()=>{onRadioChange()}}/> Immediate
+
             </label>
             <label>
             <input type="radio" checked={selectedAvaiabilityType==="Within 15 days"} onChange={()=>{onRadioChange()}}/> Within 15 days
@@ -59,58 +68,70 @@ export default function NavigationLeft(){
             <input type="radio" checked={selectedAvaiabilityType==="Within 30 days"} onChange={()=>{onRadioChange()}}/> Within 30 days
             </label>
             <label>
-            <input type="radio" checked={selectedAvaiabilityType==="After 30 days"} onChange={()=>{onRadioChange()}}/> After 30 days
+            <input type="radio" value={""} checked={true} onChange={()=>{onRadioChange()}}/> After 30 days
+
+            <input type="radio" checked={selectedAvaiabilityType==="Immediate"} onChange={()=>{onRadioChange("Immediate")}}/> Immediate
+            </label>
+            <label>
+            <input type="radio" checked={selectedAvaiabilityType==="Within 15 days"} onChange={()=>{onRadioChange("Within 15 days")}}/> Within 15 days
+            </label>
+            <label>
+            <input type="radio" checked={selectedAvaiabilityType==="Within 30 days"} onChange={()=>{onRadioChange("Within 30 days")}}/> Within 30 days
+            </label>
+            <label>
+            <input type="radio" checked={selectedAvaiabilityType==="After 30 days"} onChange={()=>{onRadioChange("After 30 days")}}/> After 30 days
+
             </label>
           </div>
           <p className="default-bold-text">Preferred Tenants</p>
           <div className="default-flex-col">
             <label>
-            <input type="checkbox"  checked={preferredTenets.includes("Family")} onChange={()=>{onPreferredTenetsChange()}}/> Family
+            <input type="checkbox"  checked={preferredTenets.includes("Family")} onChange={()=>{onPreferredTenetsChange("Family")}}/> Family
             </label>
             <label>
-            <input type="checkbox"  checked={preferredTenets.includes("Company")} onChange={()=>{onPreferredTenetsChange()}}/> Company
+            <input type="checkbox"  checked={preferredTenets.includes("Company")} onChange={()=>{onPreferredTenetsChange("Company")}}/> Company
             </label>
             <label>
-            <input type="checkbox"  checked={preferredTenets.includes("Bachelor Male")} onChange={()=>{onPreferredTenetsChange()}}/> Bachelor Male
+            <input type="checkbox"  checked={preferredTenets.includes("Bachelor Male")} onChange={()=>{onPreferredTenetsChange("Bachelor Male")}}/> Bachelor Male
             </label>
             <label>
-            <input type="checkbox"   checked={preferredTenets.includes("Bachelor Female")} onChange={()=>{onPreferredTenetsChange()}}/> Bachelor Female
+            <input type="checkbox"   checked={preferredTenets.includes("Bachelor Female")} onChange={()=>{onPreferredTenetsChange("Bachelor Female")}}/> Bachelor Female
             </label>
           </div>
           <p className="default-bold-text">Property Type</p>
           <div className="default-flex-col">
             <label>
-            <input type="checkbox"  checked={selectedPropertyType.includes("Apartment")} onChange={()=>{onPropertyTypeChange()}}/> Apartment
+            <input type="checkbox"  checked={selectedPropertyType.includes("Apartment")} onChange={()=>{onPropertyTypeChange("Apartment")}}/> Apartment
             </label>
             <label>
-            <input type="checkbox"  checked={selectedPropertyType.includes("Independent House/Villa")} onChange={()=>{onPropertyTypeChange()}}/> Independent House/Villa
+            <input type="checkbox"  checked={selectedPropertyType.includes("Independent House/Villa")} onChange={()=>{onPropertyTypeChange("Independent House/Villa")}}/> Independent House/Villa
             </label>
             <label>
-            <input type="checkbox"  checked={selectedPropertyType.includes("Gated Community Villa")} onChange={()=>{onPropertyTypeChange()}}/> Gated Community Villa
+            <input type="checkbox"  checked={selectedPropertyType.includes("Gated Community Villa")} onChange={()=>{onPropertyTypeChange("Gated Community Villa")}}/> Gated Community Villa
             </label>
           </div>
           <p className="default-bold-text">Furnishing</p>
           <div className="default-flex-col">
             <label>
-            <input type="checkbox" checked={selectedFurnishing.includes("Full")} onChange={()=>{onFurnishingValueChange()}}/> Full
+            <input type="checkbox" checked={selectedFurnishing.includes("Full")} onChange={()=>{onFurnishingValueChange("Full")}}/> Full
             </label>
             <label>
-            <input type="checkbox" checked={selectedFurnishing.includes("Semi")} onChange={()=>{onFurnishingValueChange()}}/> Semi
+            <input type="checkbox" checked={selectedFurnishing.includes("Semi")} onChange={()=>{onFurnishingValueChange("Semi")}}/> Semi
             </label>
             <label>
-            <input type="checkbox" checked={selectedFurnishing.includes("None")} onChange={()=>{onFurnishingValueChange()}}/> None
+            <input type="checkbox" checked={selectedFurnishing.includes("None")} onChange={()=>{onFurnishingValueChange("None")}}/> None
             </label>
           </div>
           <p className="default-bold-text">Parking</p>
           <div className="default-flex-col">
             <label>
-            <input type="checkbox"  checked={selectedParking.includes("2 Wheeler")} onChange={()=>{onParkingValueChange()}}/> 2 Wheeler
+            <input type="checkbox"  checked={selectedParking.includes("2 Wheeler")} onChange={()=>{onParkingValueChange("2 Wheeler")}}/> 2 Wheeler
             </label>
             <label>
-            <input type="checkbox"  checked={selectedParking.includes("4 Wheeler")} onChange={()=>{onParkingValueChange()}}/> 4 Wheeler
+            <input type="checkbox"  checked={selectedParking.includes("4 Wheeler")} onChange={()=>{onParkingValueChange("4 Wheeler")}}/> 4 Wheeler
             </label>
             <label>
-            <input type="checkbox"  checked={selectedParking.includes("2 Wheeler")} onChange={()=>{onParkingValueChange()}}/> Show only lease properties
+            <input type="checkbox"  checked={!onlyLeasedProperties} onChange={()=>{onLeasedPropertiesChange(onlyLeasedProperties)}}/> Show only lease properties
             </label>
           </div>
        

@@ -11,10 +11,16 @@ import { setWaterSupplySpecification } from "../reducer/Actions"
 
 export default function AminetesPage(){
 
-   const { waterSupply } = useSelector((state)=>state.data)
+  const {water} = useSelector((state)=>state.data)
 
-   const dispatch = useDispatch()
+  const amenetiesDataFromServer = [{id:1, aAmenity: "Lift", aicon: LiftIcon }, {id:2, aAmenity:"Internet Services", aicon: WifiIcon}, {id:3, aAmenity:"Air Conditioner", aicon: AirconditionerIcon}, {id:4, aAmenity: "Club House", aicon: ClubHouseIcon}, {id:5, aAmenity: "Intercom", aicon: IntercomIcon}, {id:6, aAmenity:"Swimming pool", aicon: SwimmingPoolIcon} , {id:7, aAmenity:"Children Play Area", aicon: ChildrenPlayArea}, {id:8, aAmenity:"Fire Safety", aicon: FireSafety}, {id:9, aAmenity: "Servant Room",aicon:ServantRoomIcon},{id:10, aAmenity: "Shopping Center", aicon: ShoppingIcon}, {id:11, aAmenity: "Gas Pipeline",aicon: GasIcon}, {id:12, aAmenity: "Park", aicon: ParkIcon}, {id:13, aAmenity: "Rain Water Harvesting", aicon:HarvestingIcon}, {id:14, aAmenity: "Sewage Treatment Plant", aicon: SewageIcon}, {id:15, aAmenity: "House Keeping", aicon: HouseKeeperIcon}, {id:16, aAmenity: "Power Backup", aicon: PowerBackupIcon}, {id:17, aAmenity: "Visitor Parking", aicon: ParkIcon}]
 
+  const dispatch = useDispatch()
+
+  const setWaterAvailibilityPreference = (value) =>{
+     dispatch(setWaterAvailabilityValue(value))
+  }
+  const onChangeHandler = () =>{
 
    const onChangeWaterSupply = (value) =>{
       console.log(444, value)
@@ -98,9 +104,30 @@ export default function AminetesPage(){
                 <span><button onClick={""} className="btn-inner-small-5">Yes</button></span>
                 </div>
                 <h4>Add Direction Tip for your tenants*</h4>
-             
-                <input type="text" value ={""} className="select-input-box" placeholder="e.g. xyz street"/>
-               
+                <input type="text" value ={""} className="select-flex-row-128" placeholder="e.g. xyz street"/>
+                </div>
+                <h4>Select the available amenities</h4>
+
+                <div class="amenities-container">
+                <div class="amenities-column">
+                  {
+                    amenetiesDataFromServer.map((amenityItem, id)=>(
+                      <li key={id} style={{listStyle: "none"}} className="item-box-large">
+                     <div>
+                     <label> 
+                     <input type="checkbox" onChange={()=>{onChangeHandler()}} value={""} />
+                     <span><img src={amenityItem.aicon} className="select-icon-measurements-l" alt={amenityItem.aAmenity}/></span>
+                     <span className="amenity-item-text">{amenityItem.aAmenity}</span>
+                     </label> 
+     
+                     </div>  
+                     </li>
+                      
+                    ))
+                  }
+                </div>
+                </div>
+
                 <div className="footer-flex-row">
                  <button onClick={""} className="footer-btn-one">Back</button>
                  <button onClick={""} className="footer-btn-two">Save & Continue</button>
