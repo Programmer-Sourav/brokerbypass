@@ -139,6 +139,26 @@ export const setSelectedOwnerAvailabilityTime = ( data) =>({
     payload: data
 })
 
+export const setOwnerDetails = (data) =>({
+    type: "OWNER_DETAILS", 
+    payload: data
+})
+
+export const setPreferenceForLeasedProperties = (data) =>({
+    type: "LEASED_PROPERTIES_ONLY",
+    payload: data
+})
+
+export const setSelectedSortingValue = (data) =>({
+    type: "SORTING_VALUE", 
+    payload: data
+})
+
+export const sortValue = (data) =>({
+    type: "SORT_VALUE",
+    payload: data
+})
+
 export const fetchPropertyForRentData = () =>{
     return async(dispatch) =>{
         dispatch(fetchPropertyForRentRequest());

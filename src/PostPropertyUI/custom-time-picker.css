@@ -1,0 +1,64 @@
+.scrollable-container {
+    height: 128px; /* Set the fixed height of the container */
+    width: 112px; /* Optional: Set the width of the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Optional: Add a border around the container */
+    padding: 8px; /* Optional: Add padding inside the container */
+    box-sizing: border-box; /* Ensure padding doesn't affect the container's width/height */
+}
+
+.custom-tp {
+    width: 72px;
+    height: 32px;
+    background-color: aliceblue;
+    margin-bottom: 4px; /* Add spacing between items */
+    padding: 4px;
+    box-sizing: border-box; /* Ensures padding is included within the height */
+    list-style-type: none;
+    text-align: center;
+}
+
+.default-custom-tp{
+  display: flex;
+  flex-direction: row;
+  width: 160px;
+  height: 140px;
+  background-color: rgb(205, 212, 211);
+}
+
+.default-custom-col{
+    display: flex;
+    flex-direction: column;
+    height: 172px;
+}
+.ampm-container{
+    width: 48px;
+    height: 32px;
+    margin-left: 8px;
+    border: 1px solid gainsboro;
+}
+.ampm-container:focus{
+    outline: none;
+}
+
+.custom-p{
+    margin-top: -4px;
+    margin-bottom: 4px;
+}
+
+.custom-btn{
+    margin-top: 8px;
+    background-color: rgb(23, 157, 132);
+    color: white;
+    border-radius: 2px;
+}
+
+.custom-btn:focus{
+ outline: none;
+ border: rgb(23, 157, 132);
+}
+
+.custom-btn:hover{
+ outline: none;
+ border: rgb(23, 157, 132);
+}

@@ -20,6 +20,9 @@ import MorningDiv from './ScheduleVisit/MorningDiv'
 import SecondPage from './SecondPage'
 import PhotoUploadGallery from './PostPropertyUI/PhotoUploadGalley'
 import SchedulePage from './PostPropertyUI/SchedulePage'
+import { Route, Routes } from 'react-router-dom'
+import CustomTimePicker from './PostPropertyUI/CustomTimePicker'
+import PopUp from './PostPropertyUI/TimePickerPopUp'
 
 function App() {
   return (
@@ -46,6 +49,9 @@ function App() {
     <MorningDiv/> */}
     {/* <PhotoUploadGallery/> */}
     <SchedulePage/>
+    {/* <ScheduleVisitSecond/> */}
+    {/* <CustomTimePicker/> */}
+    {/* <PopUp/> */}
     </div>
     
   )

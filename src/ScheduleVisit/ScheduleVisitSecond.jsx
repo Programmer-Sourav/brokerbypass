@@ -50,7 +50,7 @@ export default function ScheduleVisitSecond(){
        </PopoverBody>
        </PopoverContent>
        </Popover> */}
-       <Button type="button" label="Pick A Date" onClick={(e) => op.current.toggle(e)} />
+        <button className="button-default-0"  onClick={(e) => op.current.toggle(e)}>Pick A Date</button>
        <OverlayPanel ref={op}>
       <CalendarComponent/>
     </OverlayPanel>
