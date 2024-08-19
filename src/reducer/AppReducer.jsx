@@ -15,12 +15,20 @@ const initialState = {
     newBuilderProjectsSelected: false,
     commercialPropHoldingStatus: "rent",
     currentSelection: "",
-    preferredTenets: "",
+    preferredTenets: [],
     selectedPropertyType:"",
     selectedFurnishing: "", 
     selectedParking: "",
     selectOwnerAvailability: "",
-    selectOwnerAvailibilityTime: {startTime: "", endTime: ""}
+    selectOwnerAvailibilityTime: {startTime: "", endTime: ""},
+    propertyAvailability: "rent",
+    expectedRent: "", 
+    expectedDeposit: "",
+    monthlyMaintenance: "",
+    maintenanceAmount:"",
+    availableFrom: "",
+    rentDetailsDescription:"",
+    rentNegotiable: false
 
 }
 
@@ -112,6 +120,24 @@ const appReducer = (state = initialState, action) =>{
         return {...state, selectOwnerAvailability: action.payload}
         case 'SELECTED_OWNER_AVAILABILITY_TIME':
         return {...state, selectOwnerAvailibilityTime: action.payload}    
+
+        case 'PROPERTY_AVAILAIBILITY': 
+        return {...state, propertyAvailability: action.payload}
+        case 'EXPECTED_RENT':
+        return {...state, expectedRent: action.payload}    
+        case 'EXPECTED_DEPOSIT':
+        return {...state, expectedDeposit: action.payload}
+        case 'MONTHLY_MAINTENANCE':    
+        return {...state, monthlyMaintenance: action.payload}
+        case "MAINTENANCE_AMOUNT":
+        return {...state, maintenanceAmount: action.payload}
+        case "ABAILABLE_FROM":
+        return {...state, availableFrom: action.payload}
+        case "RENT_DETAILS_DESCRIPTION":
+        return {...state, rentDetailsDescription: action.payload}
+        case "RENT_NEGOTIABLE":
+            console.log(111, action.payload)
+        return {...state, rentNegotiable : action.payload }    
 
         default: 
         return state
