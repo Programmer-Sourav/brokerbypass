@@ -24,7 +24,7 @@ export default function AminetesPage(){
 
    const onChangeWaterSupply = (value) =>{
       console.log(444, value)
-      setWaterSupplySpecification(dispatch(value))
+      dispatch(setWaterSupplySpecification(value))
    }
 
     return(
@@ -133,7 +133,8 @@ export default function AminetesPage(){
                  <button onClick={""} className="footer-btn-two">Save & Continue</button>
                 </div>
                 </div>
-                </div>
+            
         
     )
+  }
 }
