@@ -133,7 +133,8 @@ export default function AminetesPage(){
                  <button onClick={""} className="footer-btn-two">Save & Continue</button>
                 </div>
                 </div>
-                </div>
+              
         
     )
+}
 }

@@ -1,0 +1,150 @@
+.body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica','Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.rbody{
+    width: 90%;
+    min-width: 1024px;
+    background-color: white;
+    margin-left: 16px;
+    margin-top: 16px;
+    height: 100vh;
+    margin-right: 16px;
+}
+
+.header-prompt{
+    height: 60px;
+    width: 1024px;
+    border-bottom: 1px solid gainsboro;
+    align-items: center;
+    padding-left: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: -48px;
+}
+.rbody h3{
+    color: rgb(38, 176, 153);
+    font-weight: 500;
+}
+.rbody .default-flex-row{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-between;
+}
+.rbody .default-flex-column{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 320px;
+}
+.rbody .default-text-style{
+   text-align: end; 
+   font-size: 14px;
+   color: rgb(32, 154, 134);
+   font-weight: 400;
+}
+.default-flex-row .input-text{
+    width: 320px;
+    height: 40px;
+    border: 1px solid gainsboro;
+    margin-top: -8px;
+    padding-left: 16px;
+}
+.p-design{
+    margin-top: 4px;
+}
+.default-input-box{
+    width: 320px;
+    height: 40px;
+    border: 1px solid gainsboro;
+    margin-top: -16px;
+    padding-left: 16px;
+}
+.default-flex-row-small{
+    display: flex;
+    flex-direction: row;
+    height: 64px;
+    justify-content: space-between;
+}
+.default-flex-row-small:focus{
+    outline: none;
+}
+.default-flex-row-small:hover{
+    outline: none;
+}
+.default-flex-column-small{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-between; 
+}
+
+.default-input-flex{
+    width: 320px;
+    height: 40px;
+    border: 1px solid gainsboro;
+    margin-top: -8px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.inner-input-text{
+    width: 220px;
+    height: 32px;
+    border: none;
+    margin-left: 8px;
+    padding-left: 8px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.inner-input-text:focus{
+    outline: none;
+}
+.inner-input-text:hover{
+    outline: none;
+}
+.span-default-style{
+    width: 16px;
+    margin-top: 4px;
+    font-size: 16px;
+    color: #333; /* Text color */
+    padding: 0 5px; /* Optional: Add padding around the dollar sign */
+}
+.p-design-default{
+    font-size: 14px;
+    color: #666; /* Text color */
+    margin: 0; /* Remove default margin */
+}
+.icon-style{
+    width: 24px;
+    height: 24px;
+}
+.checkbox-default-0{
+    width: 128px;
+    height: 40px;
+}
+.default-flex-row-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.default-input-1{
+    min-width: 1024px;
+    height: 92px;
+    border: 1px solid gainsboro;
+}
+.p-div-default{
+    margin-top: -8px;
+}
+.footer{
+    
+}

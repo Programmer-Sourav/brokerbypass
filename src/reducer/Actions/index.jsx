@@ -159,6 +159,29 @@ export const sortValue = (data) =>({
     payload: data
 })
 
+export const setPropertyChange = (data) =>(
+    {
+        type: "PROPERTY_AVAILAIBILITY", 
+        payload: data
+    }
+)
+
+export const setExpectedRent = (data) =>({ type: "EXPECTED_RENT", payload: data})
+
+export const setExpectedDeposit = (data) =>({ type: "EXPECTED_DEPOSIT", payload: data})
+
+export const setMonthlyMaintenance = (data) =>({type: "MONTHLY_MAINTENANCE", payload: data})
+
+export const setMaintenanceAmount = (data) =>({type: "MAINTENANCE_AMOUNT", payload: data})
+
+export const setAvailableFrom = (data) =>({type: "ABAILABLE_FROM", payload: data})
+
+export const setRentDetailsDescription = (data) =>({type: "RENT_DETAILS_DESCRIPTION", payload: data})
+
+export const setRentNegotiableFlag = (data) =>({type: "RENT_NEGOTIABLE", payload: data})
+
+
+
 export const fetchPropertyForRentData = () =>{
     return async(dispatch) =>{
         dispatch(fetchPropertyForRentRequest());
