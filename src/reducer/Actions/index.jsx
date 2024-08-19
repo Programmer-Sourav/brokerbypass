@@ -166,6 +166,8 @@ export const setPropertyChange = (data) =>(
     }
 )
 
+export const setWaterSupplySpecification = (data) =>({type: "WATER_SUPPLY", payload: data})
+
 export const setExpectedRent = (data) =>({ type: "EXPECTED_RENT", payload: data})
 
 export const setExpectedDeposit = (data) =>({ type: "EXPECTED_DEPOSIT", payload: data})
