@@ -1,5 +1,6 @@
 .details-page-body{
     display: flex;
+    background-color: tan;
 }
 
 .left-nav{
@@ -240,6 +241,7 @@
     margin-left: 64px;
     margin-top: -16px;
     width: 292px;
+    height: 40px;
 }
 
 .select-flex-row-3{
@@ -389,9 +391,34 @@
     font-weight: 400;
     display: flex;
     justify-content: space-evenly;
-    min-width: 1024px;
+    align-items: center;
+    /* min-width: 1024px;
     min-height: 920px;
-    margin-left: 64px;
+    margin-left: 64px; */
+}
+
+.btn-inner-small-5:focus{
+    outline: none !important;
+    border: 1px solid #00806f !important;
+    background-color: #00806f !important;
+    color: white !important;
+}
+
+.btn-inner-small-5-focus{
+    width: 88px !important;
+    height: 32px !important;
+    background-color: transparent !important;
+    border: 1px solid gray !important;
+    border-radius: 2px !important;
+    color: rgb(84, 81, 81) !important;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    outline: none !important;
+    border: 1px solid #00806f !important;
+    background-color: #00806f !important;
+    color: white !important;
 }
 .amenities-column{
     display: flex;

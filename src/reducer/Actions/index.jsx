@@ -182,7 +182,9 @@ export const setRentDetailsDescription = (data) =>({type: "RENT_DETAILS_DESCRIPT
 
 export const setRentNegotiableFlag = (data) =>({type: "RENT_NEGOTIABLE", payload: data})
 
+export const setSelectedAmenities = (data) => ({type: "AVIALABLE_AMENITIES", payload: data })
 
+export const setAndSaveAmenitiesDetails = (data) =>({type: "SAVE_AMENITIES_DETAILS", payload: data})
 
 export const fetchPropertyForRentData = () =>{
     return async(dispatch) =>{
