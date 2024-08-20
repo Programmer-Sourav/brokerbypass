@@ -15,8 +15,13 @@ export default function MapsComponent(){
     lat: number;
     lng: number;
   };
+
+  type LatLngLiteral  = {
+    lat: number;
+    lng: number;
+  }
   
-  const [currentLocation, setCurrentLocation] = useState<Location | null>(null);
+  const [currentLocation, setCurrentLocation] = useState<LatLngLiteral | undefined>();
 
   useEffect(()=>{
     if(navigator.geolocation){
@@ -35,8 +40,8 @@ return(
 <div id='map-container'> 
 <APIProvider apiKey = {"AIzaSyDRQY74G3jt2GJFVAhsWNwjQfQ8E8HEZ78"} onLoad= {()=>{console.log("Maps JS API has been loaded")}}>
 <Map
-  defaultZoom = {13}
-  defaultCenter = {{ lat: -33.860664, lng: 151.208138 }}
+  defaultZoom = {16}
+  defaultCenter = {currentLocation}
   mapId="7dc332444714422b"
   onCameraChanged = {( event: MapCameraChangedEvent)=>{
     console.log("Camera Changed Pos ", event.detail.center, event.detail.zoom);
