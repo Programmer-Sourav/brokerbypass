@@ -25,6 +25,8 @@ import CustomTimePicker from './PostPropertyUI/CustomTimePicker'
 import PopUp from './PostPropertyUI/TimePickerPopUp'
 import RentalDetails from './PostPropertyUI/RentalDetails'
 import AminetesPage from './PostPropertyUI/AminetesPage'
+import LocationDetailsPage from './PostPropertyUI/LocalityDetailsPage'
+import MapsComponent from './PostPropertyUI/MapComponent'
 
 function App() {
   return (
@@ -55,7 +57,8 @@ function App() {
     {/* <CustomTimePicker/> */}
     {/* <PopUp/> */}
     {/* <RentalDetails/> */}
-    <AminetesPage/>
+    {/* <AminetesPage/> */}
+    <LocationDetailsPage/>
     </div>
     
   )
