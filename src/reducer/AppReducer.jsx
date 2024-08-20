@@ -28,7 +28,9 @@ const initialState = {
     maintenanceAmount:"",
     availableFrom: "",
     rentDetailsDescription:"",
-    rentNegotiable: false
+    rentNegotiable: false,
+    amenities: [],
+    waterSupply: ""
 
 }
 
@@ -114,6 +116,13 @@ const appReducer = (state = initialState, action) =>{
         else{
             return {...state, selectedFurnishing: [...state.selectedFurnishing, action.payload]}
         }
+        case 'AVIALABLE_AMENITIES':
+         if(state.amenities.includes(action.payload)){
+            return {...state, amenities: state.amenities.filter((amenity)=>amenity!==action.payload)}
+         } 
+         else{
+            return {...state, amenities: [...state.amenities, action.payload]}
+         }  
         case 'SELECTED_PARKING':
         return {...state, selectedParking: action.payload}  
         case 'SELECTED_OWNER_AVAILABILITY': 
@@ -137,7 +146,11 @@ const appReducer = (state = initialState, action) =>{
         return {...state, rentDetailsDescription: action.payload}
         case "RENT_NEGOTIABLE":
             console.log(111, action.payload)
-        return {...state, rentNegotiable : action.payload }    
+        return {...state, rentNegotiable : action.payload }  
+        case "SAVE_AMENITIES_DETAILS": 
+         return {...state, amenitiesDetails: action.payload}
+        case "WATER_SUPPLY":
+         return {...state, waterSupply: action.payload}     
 
         default: 
         return state
