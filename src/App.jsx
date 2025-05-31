@@ -58,7 +58,10 @@ function App() {
     {/* <PopUp/> */}
     {/* <RentalDetails/> */}
     {/* <AminetesPage/> */}
-    <LocationDetailsPage/>
+    {/* <LocationDetailsPage/> */}
+    {/* <PropertyListItem/> */}
+     {/* <AminetesPage/> */}
+     <ScheduleVisitSecond/>
     </div>
     
   )

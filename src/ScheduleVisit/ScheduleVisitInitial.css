@@ -210,3 +210,32 @@
 .button-default-2:hover{
     outline: none;
 }
+@media(max-width: 600px){
+    .schedule-body{
+        display: flex;
+        flex-direction: column;
+        min-width: 512px;
+        width: 50%;
+        text-align: left;
+    }
+    .top-parent-default{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 392px;
+        height: 48px;
+        margin-top: 8px;
+        gap: 8px;
+        margin-left: -32px;
+    }
+    .schedule-text-default-3{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        box-sizing: border-box; 
+        width: 392px;
+        margin-left: -32px;
+        margin-top: 128px;
+     }
+}
