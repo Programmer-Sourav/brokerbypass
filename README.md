@@ -7,4 +7,6 @@
 5. Use of Select and Checkbox
 6. Complex filtering
 7. Developed a Custom Time Picker
+8. Implemented defer, lazyloading etc.
+9. URL displays the component developed for quick reference.
 
