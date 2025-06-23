@@ -1,8 +1,10 @@
-# React + Vite
+# Brokerbypass
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Listing on array items
+2. Integrated Google Map
+3. Designed different card
+4. Interactive Search bar
+5. Use of Select and Checkbox
+6. Complex filtering
+7. Developed a Custom Time Picker
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
