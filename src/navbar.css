@@ -7,7 +7,6 @@
     border-bottom: 1px solid #b6b1b1;
     width: 100%; /* Ensure it takes the full viewport width */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  
 }
 .nav-bar{
     display: flex;

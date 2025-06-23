@@ -6,7 +6,7 @@ export default function Navigationbar(){
 
 
     return(
-        <div>
+        <>
         <header className="header-default-nb"> 
         <span className="companylogo">
             <img src={Logo} alt="logo"/>
@@ -21,6 +21,6 @@ export default function Navigationbar(){
         </div>
         </nav>
         </header>
-        </div>
+        </>
     )
 }
