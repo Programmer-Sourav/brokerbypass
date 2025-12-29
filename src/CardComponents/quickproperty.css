@@ -1,0 +1,125 @@
+.quick-overview-default{
+    display: flex;
+    flex-direction: row;
+    min-height: 140px;
+    width: 100%;
+    max-width: 512px;
+    border: 1px solid gainsboro;
+    margin-top: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.quick-overview-default img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+.quick-overview-default h4{
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.quick-overview-default p{
+    font-size: 12px;
+    margin: 4px 0;
+    color: gray;
+    line-height: 1.4;
+}
+
+.quick-overview-default .custom-para{
+    font-size: 12px;
+    padding-top: 4px;
+    color: #e72e59;
+    font-weight: 500;
+}
+
+.quick-overview-default footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.quick-overview-default footer span{
+    display: flex;
+    gap: 4px;
+}
+
+.quick-overview-default footer span p {
+    margin: 0;
+}
+
+.top-default-0{
+    padding: 12px 12px 12px 0;
+    flex: 1;
+}
+
+.btn-default-rent{
+    height: 40px;
+    border-radius: 4px;
+    background-color: #3ab99d;
+    color: white;
+    display: flex;
+    width: 100%;
+    max-width: 512px;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-default-rent:hover {
+    background-color: #2ea085;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .quick-overview-default {
+        max-width: 100%;
+    }
+
+    .quick-overview-default img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn-default-rent {
+        max-width: 100%;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .quick-overview-default {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quick-overview-default img {
+        width: 100%;
+        height: 150px;
+        margin: 0;
+    }
+
+    .top-default-0 {
+        padding: 12px;
+        width: 100%;
+    }
+
+    .quick-overview-default footer {
+        flex-wrap: wrap;
+    }
+
+    .btn-default-rent {
+        font-size: 14px;
+    }
+}

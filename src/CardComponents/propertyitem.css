@@ -1,0 +1,303 @@
+.card-parent{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 32px);
+    height: 488px;
+    background-color: #FFFFFF;
+    margin-top: 12px;
+    margin-left: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.room-details-price{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    border: 1px solid rgb(211, 207, 207);
+    margin-left: 4px; /* Left margin */
+    padding: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+.room-details-inner-component{
+  width: calc(100% - 8px);
+  border-right: 1px solid rgb(211, 207, 207);
+  text-align: center;
+}
+.room-details-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.room-details-overall{
+    display: flex;
+    flex-direction: row;
+    height: 192px;
+    margin: 8px;
+}
+.img-cotainer{
+    height: 192px;
+    width: 272px;
+    background-color: yellow;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  width: 100%;
+  height: 152px;
+  margin-left: 16px;
+  border: 1px solid gainsboro;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  color: black;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  margin: 2px;
+}
+
+.footer-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icon-box{
+  border: 1px solid gainsboro;
+  height: 32px;
+  width: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.button-default{
+  background-color: rgb(233, 39, 71);
+  height: 40px;
+  width: 240px;
+  color: white;
+  margin: 16px;
+  border-radius: 0px;
+}
+.property-title-default{
+  padding: 8px;
+  font-weight: 400;
+  font-style: bold;
+  color: #000000;
+  margin-top: -8px;
+}
+.property-grid-title{
+  padding: 8px;
+  font-size: 12px;
+  color: #000000;
+  margin-top: -8px;
+  font: 900;
+}
+.propery-description-default{
+  padding: 8px;
+  font-size: 12px;
+  margin-top: -16px;
+  color: rgb(149, 138, 138);
+}
+@media (max-width: 600px) {
+  .card-parent {
+      width: calc(100% - 16px);
+      height: auto;
+      margin-left: 8px;
+      margin-right: 8px;
+  }
+  
+  .room-details-price, .room-details-overall {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+      height: auto;
+  }
+  
+  .room-details-inner-component{
+    width: calc(100% - 8px);
+    border-bottom: 1px solid rgb(211, 207, 207);
+    text-align: center;
+  }
+  .img-cotainer {
+      width: 100%;
+      height: auto;
+  }
+  
+  .grid-container {
+      grid-template-columns: 1fr;
+      gap: 2px;
+      border: 1px solid gainsboro;
+      height: 292px;
+      margin-left: -4px;
+  }
+  
+  .button-default {
+      width: 100%;
+      margin: 8px 0;
+      font-size: 12px;
+  }
+  
+  .icon-box {
+      margin: 8px;
+      height: 24px;
+      width: 24px;
+  }
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    color: black;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    height: 56px;
+    margin: 2px;
+  }
+  .property-title-default{
+    padding: 8px;
+    font-weight: 400;
+    font-style: bold;
+    color: #000000;
+    margin-top: 16px;
+    
+  }
+  .property-grid-title{
+    padding: 8px;
+    font-size: 12px;
+    color: #000000;
+    margin-top: 16px;
+    font: 900;
+  }
+  .propery-description-default{
+    padding: 8px;
+    font-size: 12px;
+    color: rgb(149, 138, 138);
+  }
+  .room-details-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 252px;
+    margin-top: 8px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card-parent {
+    width: calc(100% - 24px);
+    height: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.room-details-price {
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.room-details-overall {
+    flex-direction: row;
+    height: auto;
+}
+
+.img-cotainer {
+    width: 50%;
+    height: auto;
+}
+
+.grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+
+.button-default {
+    width: 80%;
+    margin: 12px;
+    font-size: 13px;
+}
+
+.icon-box {
+    height: 28px;
+    width: 28px;
+    margin: 12px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  color: black;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  height: 56px;
+  margin: 2px;
+}
+.property-title-default{
+  padding: 8px;
+  font-weight: 400;
+  font-style: bold;
+  color: #000000;
+  margin-top: 16px;
+  
+}
+.property-grid-title{
+  padding: 8px;
+  font-size: 12px;
+  color: #000000;
+  margin-top: 16px;
+  font: 900;
+}
+.propery-description-default{
+  padding: 8px;
+  font-size: 12px;
+  color: rgb(149, 138, 138);
+}
+.room-details-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 252px;
+  margin-top: 8px;
+}
+.room-details-inner-component{
+  width: calc(100% - 8px);
+  border-bottom: 1px solid rgb(211, 207, 207);
+  text-align: center;
+}
+}
+@media (min-width: 1025px) {
+  .card-parent {
+      width: calc(100% - 32px);
+      height: 488px;
+      margin-left: 16px;
+      margin-right: 16px;
+  }
+  
+  .room-details-price {
+      flex-direction: row;
+  }
+  
+  .img-cotainer {
+      width: 272px;
+      height: 192px;
+  }
+  
+  .grid-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+  }
+  
+  .button-default {
+      width: 240px;
+      margin: 16px;
+  }
+  
+  .icon-box {
+      height: 32px;
+      width: 32px;
+      margin: 16px;
+  }
+}

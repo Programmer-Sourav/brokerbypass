@@ -1,0 +1,48 @@
+.navigation-default{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    background-color: #FFFFFF;
+    margin-top: 128px;
+    padding-left: 32px;
+    margin-left: 128px;
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+    position: fixed;
+}
+
+.default-right-nav{
+    display: flex;
+    flex-direction: row;
+}
+.default-bold-text{
+    font-weight: 500;
+    color: black;
+
+}
+.default-button-select{
+    width:  88px;
+    height: 40px ;
+    background: rgba(220, 220, 220, 0.69);
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 0px;
+    margin: 8px;
+    outline: transparent;
+    border: transparent;
+}
+.default-button-select :focus{
+    outline: transparent;
+}
+
+.default-flex-col{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+}
+
+.default-nav-col{
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+}

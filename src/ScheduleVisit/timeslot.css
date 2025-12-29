@@ -1,0 +1,46 @@
+.timeslot-default{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+.timeslot-default button{
+    flex: 1;
+    min-width: 80px;
+    max-width: 100px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.1);
+    color: rgba(80, 80, 80, 0.9);
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.timeslot-default button:hover {
+    background-color: rgba(58, 185, 157, 0.15);
+    border-color: #3ab99d;
+    color: #3ab99d;
+}
+
+.timeslot-default button.selected {
+    background-color: #3ab99d;
+    color: white;
+    border-color: #3ab99d;
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .timeslot-default {
+        justify-content: center;
+    }
+
+    .timeslot-default button {
+        min-width: 70px;
+        font-size: 11px;
+    }
+}

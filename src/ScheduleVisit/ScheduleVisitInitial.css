@@ -1,0 +1,269 @@
+/* Schedule Visit Styles */
+.schedule-body{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    text-align: left;
+}
+
+.left-pane{
+    flex: 0 0 40%;
+    background-color: rgba(220, 220, 220, 0.644);
+    min-height: 512px;
+}
+
+.right-pane{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 512px;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 24px;
+}
+
+.right-rectangle-box{
+    width: 100%;
+    max-width: 420px;
+    min-height: 180px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 16px;
+    background: white;
+}
+
+.right-rectangle-box button{
+    width: 100%;
+    color: white;
+    background-color: rgb(14, 149, 104);
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 12px;
+}
+
+.right-rectangle-box button:focus,
+.right-rectangle-box button:hover{
+    outline: none;
+    background-color: rgb(12, 130, 90);
+}
+
+.button-default-0{
+    min-width: 100px;
+    height: 40px;
+    padding: 8px 16px;
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    font-weight: 400;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-default-0:focus,
+.button-default-0:hover{
+    outline: none;
+    border-color: rgba(20, 219, 159, 0.818);
+    color: rgba(20, 219, 159, 0.818);
+}
+
+.top-parent-default{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 420px;
+    padding: 16px 0;
+}
+
+.button-default-2{
+    width: 100%;
+    max-width: 420px;
+    height: 44px;
+    background-color: rgba(232, 11, 85, 0.9);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.button-default-2:focus,
+.button-default-2:hover{
+    outline: none;
+    background-color: rgba(200, 10, 70, 0.9);
+}
+
+.button-default-3{
+    flex: 1;
+    min-width: 80px;
+    height: 36px;
+    color: rgba(0, 0, 0, 0.6) !important;
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-default-3:focus,
+.button-default-3:hover{
+    outline: none;
+    border-bottom: 2px solid rgba(20, 219, 159, 0.818);
+    color: rgba(20, 219, 159, 0.818) !important;
+}
+
+.schedule-text-default-0{
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.schedule-text-default-1{
+    padding: 4px 0;
+    font-weight: 300;
+}
+
+.schedule-text-default-2{
+    padding: 8px 0;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.schedule-text-default-3{
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.right-rectangle-box hr{
+    margin: 12px 0;
+    border: none;
+    border-top: 1px solid gainsboro;
+}
+
+.default-display-flex{
+    display: flex;
+    height: 60px;
+}
+
+.hr-default-1{
+    margin: 8px 0;
+}
+
+.top-parent-default-0{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 8px 0;
+    gap: 8px;
+}
+
+.text-background-0{
+    padding: 12px;
+    width: 100%;
+    background-color: rgba(56, 211, 225, 0.267);
+    border-radius: 4px;
+    border: 1px solid rgba(11, 145, 157, 0.912);
+    margin: 8px 0;
+}
+
+.text-highlight-0{
+    font-size: 13px;
+    color: rgba(11, 145, 157, 0.912);
+    line-height: 1.5;
+}
+
+.text-background-1{
+    font-size: 14px;
+    background-color: rgba(75, 84, 85, 0.107);
+    color: black;
+    padding: 12px 16px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+.same-line-default{
+    display: inline;
+    font-weight: 600;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .schedule-body {
+        flex-direction: column;
+    }
+
+    .left-pane {
+        flex: none;
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .right-pane {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .schedule-body {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .left-pane {
+        display: none;
+    }
+
+    .right-pane {
+        width: 100%;
+        padding: 16px;
+        min-height: auto;
+    }
+
+    .right-rectangle-box {
+        padding: 12px;
+    }
+
+    .top-parent-default {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .button-default-0 {
+        width: 100%;
+    }
+
+    .top-parent-default-0 {
+        flex-direction: row;
+    }
+
+    .button-default-3 {
+        font-size: 13px;
+        padding: 8px 4px;
+    }
+
+    .text-background-1 {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+}

@@ -1,0 +1,76 @@
+.header-default{
+    display: flex;
+    height: 128px;
+    flex-direction: column;
+ }
+
+.header-default-nb{
+    display: flex;
+    background-color: #FFFFFF;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dbd7d7;
+    width: auto; /* Ensure it takes the full viewport width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-shadow: 0 2px 10px rgb(0 0 0 / 11%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.btn-default-nb{
+    background-color: rgb(58, 185, 157) !important;
+    height: auto;
+    font-weight: 400;
+    color: white;
+    border-radius: 0px;
+    text-align: center;
+    width: 192px;
+    align-items: center;
+}
+.nav-container-right{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+.signup{
+    color: gray;
+    padding: 8px;
+    margin: 8px;
+    font-weight: 400;
+    min-width: 80px;
+   
+}
+.login{
+    color: gray;
+    padding: 8px;
+    margin: 8px; 
+    font-weight: 400;
+    min-width: 80px;
+    
+}
+.menu{
+    color: gray;
+    padding: 8px;
+    margin: 8px; 
+    font-weight: 400;
+   
+}
+.companylogo{
+    margin-left: 1%;
+    width: 350px;
+    align-items: center;
+}
+.select-default-transparent{
+    outline: none;
+    margin-left: 16px;
+    border: 0px;
+}
+.option-items{
+    width: 128px;
+    height: 32px;
+}
+.group-details{
+    font-weight: 600;
+}

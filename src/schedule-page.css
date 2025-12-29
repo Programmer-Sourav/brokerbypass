@@ -1,0 +1,162 @@
+/* Schedule Page Styles */
+.schedule-pbody{
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    margin: 16px auto;
+    padding: 24px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-default-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 16px 0;
+}
+
+.btn-default-big{
+    min-width: 90px;
+    height: 48px;
+    border: 1px solid rgb(195, 194, 194);
+    color: rgb(94, 93, 93);
+    font-weight: 500;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-default-big:focus{
+    background-color: rgb(11, 124, 77);
+    color: white;
+    outline: none;
+    border-color: rgb(11, 124, 77);
+}
+
+.btn-default-big:hover{
+    border-color: rgb(11, 124, 77);
+}
+
+.btn-default-big-2{
+    min-width: 120px;
+    height: 48px;
+    border: 1px solid rgb(195, 194, 194);
+    color: rgb(94, 93, 93);
+    font-weight: 500;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-default-big-2:focus{
+    border-color: rgb(11, 124, 77);
+    outline: none;
+}
+
+.btn-default-big-2:hover{
+    border-color: rgb(11, 124, 77);
+}
+
+.btn-default-big .small-text{
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+.btn-default-big .small-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.btn-default-big-2 .small-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.btn-default-big-2 .small-text{
+    font-size: 13px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 200px;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.popup-end {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 200px;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .schedule-pbody {
+        margin: 12px;
+        padding: 16px;
+    }
+
+    .btn-default-holder {
+        justify-content: center;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .schedule-pbody {
+        margin: 8px;
+        padding: 12px;
+    }
+
+    .btn-default-holder {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-default-big,
+    .btn-default-big-2 {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .popup,
+    .popup-end {
+        width: calc(100% - 32px);
+        min-width: auto;
+    }
+}
+  

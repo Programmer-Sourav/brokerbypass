@@ -1,0 +1,249 @@
+/* Rental Details Page Styles */
+.rbody{
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    margin: 16px auto;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-prompt{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+    align-items: center;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.rbody h3{
+    color: rgb(38, 176, 153);
+    font-weight: 500;
+    padding: 0 24px;
+}
+
+.rbody .default-flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 16px 24px;
+}
+
+.rbody .default-flex-column{
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    flex: 1;
+    max-width: 350px;
+}
+
+.rbody .default-text-style{
+    text-align: end;
+    font-size: 14px;
+    color: rgb(32, 154, 134);
+    font-weight: 400;
+}
+
+.default-flex-row .input-text{
+    width: 100%;
+    height: 44px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-top: 4px;
+}
+
+.default-flex-row .input-text:focus{
+    outline: 2px solid rgb(38, 176, 153);
+    border-color: transparent;
+}
+
+.p-design{
+    margin: 8px 0 4px 0;
+    font-weight: 500;
+}
+
+.default-input-box{
+    width: 100%;
+    height: 44px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-top: 4px;
+}
+
+.default-flex-row-small{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 8px 24px;
+}
+
+.default-flex-column-small{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    flex: 1;
+}
+
+.default-input-flex{
+    width: 100%;
+    height: 44px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 4px 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.inner-input-text{
+    flex: 1;
+    height: 36px;
+    border: none;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.inner-input-text:focus{
+    outline: none;
+}
+
+.span-default-style{
+    font-size: 16px;
+    color: #333;
+    padding: 0 4px;
+}
+
+.p-design-default{
+    font-size: 14px;
+    color: #666;
+    margin: 8px 0 4px 0;
+}
+
+.icon-style{
+    width: 24px;
+    height: 24px;
+}
+
+.checkbox-default-0{
+    width: 128px;
+    height: 40px;
+}
+
+.default-flex-row-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px 24px;
+}
+
+.default-input-1{
+    width: 100%;
+    min-height: 92px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 0 24px;
+}
+
+.p-div-default{
+    margin: 8px 0;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .rbody {
+        margin: 12px;
+        padding: 12px;
+    }
+
+    .rbody .default-flex-row {
+        padding: 12px 16px;
+    }
+
+    .rbody .default-flex-column {
+        max-width: 100%;
+    }
+
+    .header-prompt {
+        padding: 0 16px;
+    }
+
+    .rbody h3 {
+        padding: 0 16px;
+    }
+
+    .default-flex-row-small {
+        padding: 8px 16px;
+    }
+
+    .default-flex-row-1 {
+        padding: 12px 16px;
+    }
+
+    .default-input-1 {
+        margin: 0 16px;
+        width: calc(100% - 32px);
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .rbody {
+        margin: 8px;
+        padding: 8px;
+    }
+
+    .rbody .default-flex-row {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .rbody .default-flex-column {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .header-prompt {
+        height: auto;
+        padding: 12px;
+        flex-wrap: wrap;
+    }
+
+    .rbody h3 {
+        padding: 0 12px;
+        font-size: 16px;
+    }
+
+    .default-flex-row-small {
+        flex-direction: column;
+        padding: 8px 12px;
+    }
+
+    .default-flex-column-small {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .default-flex-row-1 {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .default-input-1 {
+        margin: 0 12px;
+        width: calc(100% - 24px);
+    }
+
+    .default-input-box,
+    .default-flex-row .input-text {
+        height: 48px;
+    }
+}
