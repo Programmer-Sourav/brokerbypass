@@ -47,7 +47,7 @@
     height: 40px;
     width: 100%;
     max-width: 320px;
-    margin-top: 32px;
+    margin: 32px auto 0 auto;
     border: 1px solid gainsboro;
     border-bottom: transparent;
     align-items: center;
@@ -67,6 +67,7 @@
     border-right: gainsboro 1px solid;
     outline: transparent;
     background: white;
+    cursor: pointer;
 }
 
 .tabbar button:last-child {
@@ -80,9 +81,16 @@
     outline: none;
 }
 
+.tabbar button.active {
+    border-bottom: 4px solid #f72c5f;
+    color: #f72c5f;
+    font-weight: 600;
+}
+
 .parent-div{
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 150px;
     width: 100%;
     padding: 0 16px;
