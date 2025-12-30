@@ -65,3 +65,40 @@
     height: 20px;
     object-fit: contain;
 }
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .search-bar-decorator {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .select-default-2,
+    .select-default-3 {
+        width: 130px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .search-bar-decorator {
+        width: 100%;
+        height: auto;
+        min-height: 108px;
+    }
+
+    .search-bar-default-3 {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .select-default-2,
+    .select-default-3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search-bar-default-2 {
+        width: calc(100% - 48px);
+    }
+}

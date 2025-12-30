@@ -1,4 +1,19 @@
 #map-container{
-    width: 1024px;
+    width: 100%;
+    max-width: 1024px;
     height: 392px;
+}
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    #map-container {
+        height: 320px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    #map-container {
+        height: 250px;
+    }
 }

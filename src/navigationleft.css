@@ -46,3 +46,39 @@
     flex-direction: row;
     height: 72px;
 }
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .navigation-default {
+        width: 280px;
+        margin-left: 0;
+        padding-left: 16px;
+        z-index: 100;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .navigation-default {
+        display: none;
+    }
+
+    .navigation-default.show {
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        padding: 16px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 999;
+    }
+
+    .default-button-select {
+        width: 70px;
+        height: 36px;
+        font-size: 12px;
+        margin: 4px;
+    }
+}

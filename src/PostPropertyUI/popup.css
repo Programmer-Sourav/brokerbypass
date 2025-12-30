@@ -25,4 +25,13 @@
     text-align: left;
     height: 200px;
   }
+
+  /* Mobile styles */
+  @media (max-width: 600px) {
+    .popup {
+      left: 50%;
+      width: calc(100% - 32px);
+      max-width: 280px;
+    }
+  }
   

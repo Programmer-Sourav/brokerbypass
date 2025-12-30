@@ -22,3 +22,19 @@
     display: flex;
     flex-direction: column;
 }
+
+/* Tablet styles */
+@media (max-width: 900px) {
+    .conatiner-default-0 {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .conatiner-default-0 {
+        margin-left: 0;
+        padding: 8px;
+    }
+}

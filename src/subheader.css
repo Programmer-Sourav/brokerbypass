@@ -152,5 +152,74 @@
     color: white;
     margin-top: 0px;
     margin-left: -4px;
+}
 
+/* Tablet styles */
+@media (max-width: 900px) {
+    .header {
+        top: 60px;
+        height: auto;
+        min-height: 52px;
+        flex-wrap: wrap;
+        padding: 8px;
+    }
+
+    .input-default {
+        width: 100%;
+        max-width: 400px;
+        margin-left: 0;
+    }
+
+    .input-parent-default,
+    .input-parent-default-one {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .companylogo {
+        width: auto;
+    }
+
+    .btn-small-default-green,
+    .btn-small-default-green-1 {
+        font-size: 11px;
+        height: 28px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+        gap: 8px;
+    }
+
+    .input-default {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .input-parent-default,
+    .input-parent-default-one {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 8px;
+        height: auto;
+    }
+
+    .btn-small-default-green,
+    .btn-small-default-green-1 {
+        flex: 1;
+        min-width: 70px;
+        margin: 4px;
+    }
 }

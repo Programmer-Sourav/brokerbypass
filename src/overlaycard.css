@@ -49,5 +49,44 @@
     font-size: 12px;
     padding-left: 4px;
     margin-top: -8px;
-    
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .card-default {
+        width: 180px;
+        height: 180px;
+        margin: 12px;
+    }
+
+    .card-default img {
+        width: 180px;
+        height: 100px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .card-default {
+        width: calc(50% - 24px);
+        height: auto;
+        margin: 8px;
+    }
+
+    .card-default img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/10;
+    }
+
+    .card-price-default {
+        font-size: 10px;
+        height: 20px;
+        padding: 3px;
+    }
+
+    .card-footer-text-bigger-default,
+    .card-footer-text-bigger-sm2-default {
+        font-size: 10px;
+    }
 }
