@@ -1,36 +1,44 @@
-/* Rental Details Page Styles */
+/* Rental Details Page Styles - NoBroker Style */
 .rbody{
     width: 100%;
-    max-width: 1200px;
-    background-color: white;
-    margin: 16px auto;
-    padding: 16px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 900px;
+    background-color: #ffffff;
+    margin: 80px auto 100px auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    overflow: hidden;
 }
 
 .header-prompt{
-    height: 60px;
+    height: 64px;
     width: 100%;
-    border-bottom: 1px solid gainsboro;
-    align-items: center;
-    padding: 0 24px;
+    border-bottom: 1px solid #e8eaed;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    align-items: center;
+    padding: 0 32px;
 }
 
 .rbody h3{
-    color: rgb(38, 176, 153);
-    font-weight: 500;
-    padding: 0 24px;
+    color: #009587;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.rbody h4{
+    font-weight: 600;
+    font-size: 14px;
+    color: #2d3748;
+    margin: 24px 32px 8px 32px;
+    padding: 0;
 }
 
 .rbody .default-flex-row{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding: 16px 24px;
+    padding: 24px 32px;
 }
 
 .rbody .default-flex-column{
@@ -38,49 +46,78 @@
     flex-direction: column;
     min-width: 280px;
     flex: 1;
-    max-width: 350px;
+    max-width: 400px;
 }
 
 .rbody .default-text-style{
-    text-align: end;
-    font-size: 14px;
-    color: rgb(32, 154, 134);
-    font-weight: 400;
+    text-align: right;
+    font-size: 13px;
+    color: #009587;
+    font-weight: 500;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.rbody .default-text-style:hover{
+    text-decoration: underline;
 }
 
 .default-flex-row .input-text{
     width: 100%;
-    height: 44px;
-    border: 1px solid gainsboro;
-    border-radius: 4px;
-    padding: 8px 16px;
-    margin-top: 4px;
+    height: 48px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #374151;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.default-flex-row .input-text:hover{
+    border-color: #009587;
 }
 
 .default-flex-row .input-text:focus{
-    outline: 2px solid rgb(38, 176, 153);
-    border-color: transparent;
+    outline: none;
+    border-color: #009587;
+    box-shadow: 0 0 0 3px rgba(0,149,135,0.1);
 }
 
 .p-design{
-    margin: 8px 0 4px 0;
-    font-weight: 500;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2d3748;
 }
 
 .default-input-box{
     width: 100%;
-    height: 44px;
-    border: 1px solid gainsboro;
-    border-radius: 4px;
-    padding: 8px 16px;
-    margin-top: 4px;
+    height: 48px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #374151;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.default-input-box:hover{
+    border-color: #009587;
+}
+
+.default-input-box:focus{
+    outline: none;
+    border-color: #009587;
+    box-shadow: 0 0 0 3px rgba(0,149,135,0.1);
 }
 
 .default-flex-row-small{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-    padding: 8px 24px;
+    gap: 20px;
+    padding: 8px 32px 16px 32px;
 }
 
 .default-flex-column-small{
@@ -88,27 +125,40 @@
     flex-direction: column;
     min-width: 200px;
     flex: 1;
+    max-width: 280px;
 }
 
 .default-input-flex{
     width: 100%;
-    height: 44px;
-    border: 1px solid gainsboro;
-    border-radius: 4px;
-    padding: 4px 12px;
+    height: 48px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 0 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    margin-top: 4px;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.default-input-flex:hover{
+    border-color: #009587;
+}
+
+.default-input-flex:focus-within{
+    border-color: #009587;
+    box-shadow: 0 0 0 3px rgba(0,149,135,0.1);
 }
 
 .inner-input-text{
     flex: 1;
-    height: 36px;
+    height: 100%;
     border: none;
-    padding: 4px 8px;
+    padding: 0 8px;
     font-size: 14px;
+    color: #374151;
+    background: transparent;
 }
 
 .inner-input-text:focus{
@@ -116,75 +166,246 @@
 }
 
 .span-default-style{
-    font-size: 16px;
-    color: #333;
+    font-size: 14px;
+    color: #6b7280;
     padding: 0 4px;
 }
 
 .p-design-default{
     font-size: 14px;
-    color: #666;
-    margin: 8px 0 4px 0;
+    font-weight: 500;
+    color: #5a6573;
+    margin: 0 0 8px 0;
 }
 
 .icon-style{
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
 }
 
 .checkbox-default-0{
-    width: 128px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
+    accent-color: #009587;
+    cursor: pointer;
 }
 
 .default-flex-row-1{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-    padding: 16px 24px;
+    gap: 20px;
+    padding: 16px 32px;
+    align-items: center;
 }
 
 .default-input-1{
-    width: 100%;
-    min-height: 92px;
-    border: 1px solid gainsboro;
-    border-radius: 4px;
-    padding: 12px;
-    margin: 0 24px;
+    width: calc(100% - 64px);
+    min-height: 100px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 0 32px;
+    font-size: 14px;
+    color: #374151;
+    resize: vertical;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.default-input-1:hover{
+    border-color: #009587;
+}
+
+.default-input-1:focus{
+    outline: none;
+    border-color: #009587;
+    box-shadow: 0 0 0 3px rgba(0,149,135,0.1);
 }
 
 .p-div-default{
     margin: 8px 0;
+    padding: 0 32px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Select dropdown styling */
+.rbody select{
+    width: 100%;
+    height: 48px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #374151;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.rbody select:hover{
+    border-color: #009587;
+}
+
+.rbody select:focus{
+    outline: none;
+    border-color: #009587;
+    box-shadow: 0 0 0 3px rgba(0,149,135,0.1);
+}
+
+/* Footer with Save Button */
+.rbody .footer-flex-row{
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+    width: 100%;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    border-top: 1px solid #e8eaed;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.06);
+    gap: 16px;
+    z-index: 100;
+}
+
+.footer-btn-one{
+    background-color: #f3f4f6;
+    color: #5a6573;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.footer-btn-one:hover{
+    background-color: #e5e7eb;
+}
+
+.footer-btn-two{
+    background-color: #e72e59;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.footer-btn-two:hover{
+    background-color: #d11f4a;
 }
 
 /* Tablet styles */
 @media (max-width: 900px) {
     .rbody {
-        margin: 12px;
-        padding: 12px;
+        margin: 76px 16px 90px 16px;
+        max-width: calc(100% - 32px);
+    }
+
+    .header-prompt {
+        padding: 0 24px;
+    }
+
+    .rbody h3 {
+        padding: 0;
+    }
+
+    .rbody h4 {
+        margin: 20px 24px 8px 24px;
     }
 
     .rbody .default-flex-row {
-        padding: 12px 16px;
+        padding: 20px 24px;
     }
 
     .rbody .default-flex-column {
         max-width: 100%;
     }
 
+    .default-flex-row-small {
+        padding: 8px 24px 16px 24px;
+    }
+
+    .default-flex-column-small {
+        max-width: 100%;
+    }
+
+    .default-flex-row-1 {
+        padding: 16px 24px;
+    }
+
+    .default-input-1 {
+        margin: 0 24px;
+        width: calc(100% - 48px);
+    }
+
+    .p-div-default {
+        padding: 0 24px;
+    }
+
+    .rbody .footer-flex-row {
+        max-width: 100%;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .rbody {
+        margin: 68px 12px 80px 12px;
+        max-width: calc(100% - 24px);
+        border-radius: 6px;
+    }
+
     .header-prompt {
+        height: 56px;
         padding: 0 16px;
     }
 
     .rbody h3 {
-        padding: 0 16px;
+        font-size: 16px;
+    }
+
+    .rbody h4 {
+        margin: 16px 16px 8px 16px;
+        font-size: 13px;
+    }
+
+    .rbody .default-flex-row {
+        flex-direction: column;
+        padding: 16px;
+        gap: 20px;
+    }
+
+    .rbody .default-flex-column {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
     }
 
     .default-flex-row-small {
-        padding: 8px 16px;
+        flex-direction: column;
+        padding: 8px 16px 16px 16px;
+        gap: 16px;
+    }
+
+    .default-flex-column-small {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
     }
 
     .default-flex-row-1 {
+        flex-direction: column;
         padding: 12px 16px;
     }
 
@@ -192,58 +413,30 @@
         margin: 0 16px;
         width: calc(100% - 32px);
     }
-}
 
-/* Mobile styles */
-@media (max-width: 600px) {
-    .rbody {
-        margin: 8px;
-        padding: 8px;
-    }
-
-    .rbody .default-flex-row {
-        flex-direction: column;
-        padding: 12px;
-    }
-
-    .rbody .default-flex-column {
-        width: 100%;
-        min-width: 100%;
-    }
-
-    .header-prompt {
-        height: auto;
-        padding: 12px;
-        flex-wrap: wrap;
-    }
-
-    .rbody h3 {
-        padding: 0 12px;
-        font-size: 16px;
-    }
-
-    .default-flex-row-small {
-        flex-direction: column;
-        padding: 8px 12px;
-    }
-
-    .default-flex-column-small {
-        width: 100%;
-        min-width: 100%;
-    }
-
-    .default-flex-row-1 {
-        flex-direction: column;
-        padding: 12px;
-    }
-
-    .default-input-1 {
-        margin: 0 12px;
-        width: calc(100% - 24px);
+    .p-div-default {
+        padding: 0 16px;
     }
 
     .default-input-box,
-    .default-flex-row .input-text {
+    .default-flex-row .input-text,
+    .default-input-flex,
+    .rbody select {
         height: 48px;
+    }
+
+    .rbody .footer-flex-row {
+        height: 68px;
+        padding: 0 16px;
+    }
+
+    .footer-btn-one {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .footer-btn-two {
+        padding: 10px 28px;
+        font-size: 13px;
     }
 }
