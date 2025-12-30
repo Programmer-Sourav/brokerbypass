@@ -46,9 +46,9 @@ export default function FirstHome(){
             World's First Free & NoBrokerage Property Site To Help Community
         </h1>
         <div className="tabbar">
-            <button onClick={()=>{setSelectedTab("1")}}>Buy</button>
-            <button onClick={()=>{setSelectedTab("2")}}>Rent</button>
-            <button onClick={()=>{setSelectedTab("3")}}>Commercial</button>
+            <button className={selectedTab === "Buy" || selectedTab === "1" ? "active" : ""} onClick={()=>{setSelectedTab("1")}}>Buy</button>
+            <button className={selectedTab === "2" ? "active" : ""} onClick={()=>{setSelectedTab("2")}}>Rent</button>
+            <button className={selectedTab === "3" ? "active" : ""} onClick={()=>{setSelectedTab("3")}}>Commercial</button>
         </div>
         <div className="parent-div">
         <div className="searchholder">
@@ -70,12 +70,12 @@ export default function FirstHome(){
          </div>
          
            <div className="default-prompt">
-            <section> ---------Are you a property owner?---------- </section>
-           
+            <section>Are you a property owner?</section>
+
            <button onClick={postFreePropertyAdv} className="btn-default">Post Free Property Ad</button>
            </div>
            <div className="section-default">
-            <p className="section-prompt">--------------------- We Make A Difference --------------------- </p>
+            <p className="section-prompt">We Make A Difference</p>
            <div className="row-flex-default">
             <div className="diff-holder">
             <div className="circle-default">₹130 cr+</div>
@@ -94,7 +94,7 @@ export default function FirstHome(){
            </div>
 
            <div className="section-default">
-            <p className="section-prompt">--------------------- Why Bypassbroker?  --------------------- </p>
+            <p className="section-prompt">Why BrokerBypass?</p>
            <div className="row-flex-default">
             <div className="diff-holder">
             <div className="circle-default">
